@@ -87,7 +87,7 @@ function NewsletterSection() {
     return (
         <>
         <section className="section-newsletter pb-120 pt-120 fix position-relative">
-            <div className="container-main position-relative fix">
+            <div className="container position-relative fix">
                 <div className="row align-items-center fix text-center position-relative z-1">
 
                     {/* Left side (Salesforce Expertise) */}
@@ -123,7 +123,7 @@ function NewsletterSection() {
                     <div className="col-lg-6 mt-lg-0 mt-5 px-3">
                         <div className="px-lg-5 text-lg-start text-center">
                             <div className="NewsletterUpdatedBtn"> 
-                                <DotBtn text="Stay Updated" />
+                                <DotBtn text="Stay Updated"/>
                             </div>     
                             
                             <h1
