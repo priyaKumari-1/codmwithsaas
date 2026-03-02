@@ -7,16 +7,10 @@ import icon1 from '../../../assets/imgs/services-details/icon-5.svg';
 import img1 from '../../../assets/imgs/services-details-2/Api/img-2.svg';
 import img2 from '../../../assets/imgs/services-details-2/Api/IMG-3.svg';
 import img3 from '../../../assets/imgs/services-details-2/Api/img-4.avif';
-// import img4 from '../../../assets/imgs/services-details-2/industries cloud/img-4.png';
-// import img5 from '../../../assets/imgs/services-details-2/industries cloud/img-5.png';
-// import img6 from '../../../assets/imgs/services-details-2/industries cloud/img-1.png';
 
 import checkImg from '../../../assets/imgs/services-details/check.svg';
 import ApiIntegrationAccordionData from '../ApiIntegrationAccordionData/ApiIntegrationAccordionData';
 import S_rightSidebarDataDevelopment from '../../ServiceSidebar/S_rightSidebarDataDevelopment';
-
-// import S_rightContainer from '../../HigherEducation/S_rightContainer/S_rightContainer';
-// import IndustriesCloudAccordionData from '../IndustriesCloudAccordionData/IndustriesCloudAccordionData';
 
 function ApiIntegration_Second() {
   return (
@@ -191,14 +185,8 @@ function ApiIntegration_Second() {
                 </span>
               </p>
 
-              {/*  */}
-
-              {/* Accordion */}
-
-              {/* <IndustriesCloudAccordionData/> */}
               <ApiIntegrationAccordionData/>
 
-              {/* main div end */}
             </div>
 
 

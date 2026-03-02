@@ -46,8 +46,7 @@ import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
 import TermsAndConditions from './TermsAndConditions/TermsAndConditions';
 import NonprofitCloud from './ServiceComponents/NonprofitCloud/NonprofitCloud';
 import AgentforceAI from './BlogsComponents/AgentforceAI/AgentforceAI';
-
-
+import SaasAiHome from './pages/Home/SaasAiHome';
 
 function App() {
 
@@ -58,6 +57,18 @@ function App() {
       easing: "ease-in-out",
     });
   }, []);
+
+  function HomeSwitcher() {
+  const hostname = window.location.href;
+  console.log(hostname);
+
+  if (hostname.includes("saasailabs")) {
+    return <SaasAiHome/>;
+  }else{
+  return <Home/>;
+  }
+}
+
 
   return (
     <>
@@ -72,7 +83,8 @@ function App() {
             
         {/* <SalesforcePartnerLogo/> */}
             <Routes>
-              <Route path="/" element={<Home />} />
+              {/* <Route path="/" element={<Home />} /> */}
+              <Route path="/" element={<HomeSwitcher/>} /> 
               <Route path="/about" element={<About />} />
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>

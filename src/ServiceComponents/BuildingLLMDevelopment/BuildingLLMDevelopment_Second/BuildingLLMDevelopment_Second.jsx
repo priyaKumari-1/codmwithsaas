@@ -11,7 +11,6 @@ import img3 from '../../../assets/imgs/services-details-2/img-2.png';
 import checkImg from '../../../assets/imgs/services-details/check.svg';
 import BuildingLLMDevelopmentAccodionData from '../BuildingLLMDevelopmentAccodionData/BuildingLLMDevelopmentAccodionData';
 import S_rightSidebarDataDevelopment from '../../ServiceSidebar/S_rightSidebarDataDevelopment';
-// import CRMDevelopmentAccodionData from '../CRMDevelopmentAccodionData/CRMDevelopmentAccodionData';
 
 function BuildingLLMDevelopment_Second() {
     return (
@@ -177,9 +176,7 @@ function BuildingLLMDevelopment_Second() {
 
                             {/* Accordion */}
                             <BuildingLLMDevelopmentAccodionData/>
-
-
-                            {/* main div end */}
+                            
                         </div>
 
                         {/* right container */}
