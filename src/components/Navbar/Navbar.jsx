@@ -10,6 +10,9 @@ import flag1 from '../../assets/imgs/contact-4/Flag of UK.png';
 import flag2 from '../../assets/imgs/contact-4/Flag_of_India.png';
 import flag3 from '../../assets/imgs/contact-4/Flag_of_the_United_States.png';
 
+// for logo conditional 
+import brand from '../../config/brand';
+
 function Navbar() {
   const [isDark, setIsDark] = useState(true);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -43,7 +46,9 @@ function Navbar() {
           to="/"
           onClick={handleNavItemClick}
         >
-          <img src={logo} alt="CODM" className="me-2" />
+          {/* <img src={logo} alt="CODM" className="me-2" /> */}
+           {/* <img src={brand.logo} alt={brand.name} className="me-2"/> */}
+           <img src={brand.logo} alt={brand.name} className={`me-2 ${brand.key}`}/>
         </Link>
 
         <button

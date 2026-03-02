@@ -1,3 +1,11 @@
+/* saas navabar */
+.saas_logo{
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+
 .navbar {
   background: white;
   z-index: 1030;

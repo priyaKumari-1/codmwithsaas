@@ -56,7 +56,7 @@ function WhatWeDo() {
         <section className="what-we-do">
             <div className="container">
                 <div className="section-header">
-                    <h2 className="text-black">Our Services</h2>
+                    <h2 className="text-white">Our Services</h2>
                     
                 </div>
 

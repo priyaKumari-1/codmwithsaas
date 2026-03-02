@@ -48,6 +48,9 @@ import NonprofitCloud from './ServiceComponents/NonprofitCloud/NonprofitCloud';
 import AgentforceAI from './BlogsComponents/AgentforceAI/AgentforceAI';
 import SaasAiHome from './pages/Home/SaasAiHome';
 
+// home page condition
+import brand from "../src/config/brand";
+
 function App() {
 
   useEffect(() => {
@@ -58,15 +61,25 @@ function App() {
     });
   }, []);
 
-  function HomeSwitcher() {
-  const hostname = window.location.href;
-  console.log(hostname);
+//   function HomeSwitcher() {
+//   const hostname = window.location.hostname;
+//   console.log(hostname);
 
-  if (hostname.includes("saasailabs")) {
-    return <SaasAiHome/>;
-  }else{
-  return <Home/>;
+//   if (hostname.includes("saasailabs")) {
+//     return <Home/>;
+//   }else{
+//   return <SaasAiHome/> ;
+//   }
+// }
+
+
+   function HomeSwitcher() {
+  if (brand.name === "SaasAi Labs") {
+    // return <Home />;
+     return <SaasAiHome/>;  
   }
+
+   return <Home />;
 }
 
 
