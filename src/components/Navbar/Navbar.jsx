@@ -47,8 +47,8 @@ function Navbar() {
           onClick={handleNavItemClick}
         >
           {/* <img src={logo} alt="CODM" className="me-2" /> */}
-           {/* <img src={brand.logo} alt={brand.name} className="me-2"/> */}
-           <img src={brand.logo} alt={brand.name} className={`me-2 ${brand.key}`}/>
+          {/* <img src={brand.logo} alt={brand.name} className="me-2"/> */}
+          <img src={brand.logo} alt={brand.name} className={`me-2 ${brand.key}`} />
         </Link>
 
         <button
@@ -431,14 +431,14 @@ function Navbar() {
               </ul>
             </li>
 
-            <li className="nav-item mega-dropdown1 position-relative">
+            {/* <li className="nav-item mega-dropdown1 position-relative">
               <div className="d-flex align-items-center nav-link text-reset PartnerDiv partnerfontsize"
                 style={{ width: '100%', height: "84px" }}>
-                PARTNER
+                 Partner
                 <MdKeyboardArrowDown className="ms-1"/>
               </div>
 
-              {/* Dropdown Menu */}
+            
               <ul className="partner-dropdown list-unstyled">
                 <li className="nav-item d-flex justify-content-center align-items-center">
                   <NavLink
@@ -450,7 +450,39 @@ function Navbar() {
                   </NavLink>
                 </li>
               </ul>
-            </li>
+            </li> */}
+
+            {brand.key === "codm_Logo" ? (
+              // CODM VERSION
+              <li className="nav-item mega-dropdown1 position-relative">
+                <div className="d-flex align-items-center nav-link text-reset PartnerDiv partnerfontsize"
+                  style={{ width: '100%', height: "84px" }}>
+                  Partner
+                  <MdKeyboardArrowDown className="ms-1" />
+                </div>
+
+                <ul className="partner-dropdown list-unstyled">
+                  <li className="nav-item d-flex justify-content-center align-items-center">
+                    <NavLink
+                      className="nav-link"
+                      to="https://saasailabs.codmsoftware.co.uk/"
+                      target="_blank"
+                    >
+                      SAAS AI LABS
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+            ) : (
+              // SAASAI VERSION
+              <a
+                href="https://codmsoftware.co.uk/"
+                className="d-flex align-items-center nav-link text-reset partnerfontsize"
+
+              >
+                Codm software
+              </a>
+            )}
 
 
             <li className="nav-item  d-flex justify-content-center align-items-center">

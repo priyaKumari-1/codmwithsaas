@@ -130,14 +130,14 @@ function Footer() {
             <div className="d-flex justify-content-center justify-content-lg-start align-items-center mb-2">
               <img className="" src={flag1} alt="UK Flag" style={{ width: "15px", height: "13px", marginRight: "6px" }} />
               <p className="mb-0" style={{ fontSize: ".9rem" }}>
-               UKRegus - Edmund House, 12-22 Newhall St, Birmingham B3 3AS, UK
+               UK Regus - Edmund House, 12-22 Newhall St, Birmingham B3 3AS, UK
               </p>
             </div>
 
             <div className="d-flex justify-content-center justify-content-lg-start align-items-center mb-2">
               <img src={flag1} alt="UK Flag" style={{ width: "15px", height: "13px", marginRight: "6px" }} />
               <p className="mb-0" style={{ fontSize: ".9rem" }}>
-               UK71-75 Shelton Street, Covent Garden, London WC2H 9JQ, UK
+               UK 71-75 Shelton Street, Covent Garden, London WC2H 9JQ, UK
               </p>
             </div> 
              <div className="d-flex justify-content-center justify-content-lg-start align-items-center mb-2">
