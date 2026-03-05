@@ -1,78 +1,66 @@
-
-.what-we-do {
-  padding: 40px 20px;
+/* ================= SECTION ================= */
+.wwd-section {
+  padding: clamp(60px, 8vw, 100px) 20px;
   position: relative;
   overflow: hidden;
 }
 
-.section-header {
+/* Optional container control */
+.wwd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+.wwd-header {
   text-align: center;
-  margin-bottom: 50px;
-  color: #fff;
+  margin-bottom: clamp(40px, 6vw, 70px);
 }
 
-.section-header h2 {
-  font-size: 2.8rem;
+.wwd-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 700;
+  color: #ffffff;
 }
 
-.section-header p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin:auto;
-}
-
-.services-grid {
+/* ================= GRID ================= */
+.wwd-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  */
-  gap: 30px;
-  margin-bottom: 1.8rem;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(20px, 3vw, 35px);
 }
 
-.service-card {
-  /* background: #f3f4f6; */
+/* ================= CARD ================= */
+.wwd-card {
   background-color: #ffffff;
-  border-radius: 15px;
-  padding:10px 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: clamp(25px, 4vw, 40px);
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-}
-.serviceIconColor{
-  color: rgb(115,84,245);
+.wwd-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
+/* ================= ICON ================= */
+.wwd-icon {
+  color: rgb(115, 84, 245);
+  margin-bottom: 18px;
+}
 
-.service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+/* ================= CARD TITLE ================= */
+.wwd-card-title {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
   color: #2d3748;
 }
 
-.service-card p {
-  color: #4a5568;
-  line-height: 1.8;
-}
-
-@media (max-width:400px){
-      .service-card {
-        width: 267px;
-        /* margin-right: 4rem; */
-        
-    }
-}
-
-@media (max-width: 768px) {
-  .section-header h2 {
-    font-size: 2rem;
-  }
-
-  .what-we-do {
-    padding: 50px 20px;
+/* ================= MOBILE IMPROVEMENTS ================= */
+@media (max-width: 480px) {
+  .wwd-section {
+    padding: 60px 15px;
   }
 }

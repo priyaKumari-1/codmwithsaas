@@ -1,17 +1,10 @@
 :root {
   --codm-primary: #6b4ef2;
-  --codm-bg: radial-gradient(
-    circle at top left,
-    #7c5cff,
-    #3b2a9f
-  );
 }
 
-/* Section */
 .about-section {
-  padding: 100px 0;
-  background: rgb(163,140,255);
-  /* background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1419 100%); */
+  padding: clamp(60px, 8vw, 120px) 0;
+  background: rgb(163, 140, 255);
   color: #fff;
   opacity: 0;
   transform: translateY(60px);
@@ -23,38 +16,34 @@
   transform: translateY(0);
 }
 
-/* Badge */
 .about-badge {
   display: inline-block;
   padding: 6px 14px;
   margin-bottom: 15px;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Title */
 .about-title {
-  font-size: 2.7rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
-/* Text */
 .about-text {
-  max-width: 520px;
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   line-height: 1.8;
   color: #e6e2ff;
+  max-width: 100%;
 }
 
-/* Stats */
 .stat-card {
   height: 100%;
-  padding: 35px 25px;
+  padding: clamp(20px, 3vw, 35px);
   border-radius: 18px;
   text-align: center;
   background: rgba(255, 255, 255, 0.12);
@@ -64,28 +53,37 @@
 }
 
 .stat-card h3 {
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
   font-weight: 800;
 }
 
 .stat-card p {
   margin-top: 10px;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #dcd6ff;
 }
 
-/* Hover */
 .stat-card:hover {
-  transform: translateY(-12px);
+  transform: translateY(-8px);
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .about-title {
-    font-size: 2.2rem;
+@media (max-width: 991px) {
+  .about-section {
+    text-align: center;
+  }
+
+  .about-text {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .stat-card {
+           padding: 0rem 0rem;
+        padding-top: 1rem;
   }
 }
