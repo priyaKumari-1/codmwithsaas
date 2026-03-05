@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa"; 
 import { FaCogs } from "react-icons/fa";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -64,7 +63,6 @@ const expertise = [
 ];
 
 function WhatWeDo() {
-
     useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -74,7 +72,7 @@ function WhatWeDo() {
   }, []);
     return (
         <section className="what-we-do">
-            <div className="container">
+            <div className="">
                 <div className="section-header">
                     <h2>What We Do</h2>
                     <p>

@@ -39,20 +39,6 @@
 .author p {
   margin-bottom: 1.5rem;
 }
-/* .active{
-  display: block;
-}
-.inactive{
-  display: none;
-} */
-
-/* .author {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .8rem;
-  transition: all 0.5s ease;
-} */
 
 .avatarImg {
   width: 3.6rem;

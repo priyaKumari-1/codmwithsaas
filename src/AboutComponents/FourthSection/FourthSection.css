@@ -38,7 +38,7 @@
 
 /* responsive */
 
-@media (max-width:715px) {
+@media (max-width:767px) {
   .img-12-custom{
     width: 14rem;
   }

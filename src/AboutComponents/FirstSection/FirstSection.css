@@ -36,6 +36,7 @@
 }   
 .paddingCustom{
     padding-top: 7rem;
+    border-radius: 0rem !important;
 }
 .rotationdiv{
     position: absolute;

@@ -41,7 +41,7 @@ export default function Testimonial() {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % cards.length);
     }, 2000);
-
+    
     return () => clearInterval(interval);
   }, []);
 
