@@ -34,6 +34,9 @@
     .about_first_section{
     padding-top: 30%;
 }   
+.paddingCustom{
+    padding-top: 7rem;
+}
 .rotationdiv{
     position: absolute;
     right: -23rem;

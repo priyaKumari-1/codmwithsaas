@@ -51,7 +51,26 @@ import SaasAiHome from './pages/Home/SaasAiHome';
 // home page condition
 import brand from "../src/config/brand";
 
-function App() {
+function App() { 
+  
+  // code for favicon 
+
+  useEffect(() => {
+
+    document.title = brand.title;
+    const existingFavicons = document.querySelectorAll("link[rel*='icon']");
+    existingFavicons.forEach(icon => icon.remove());
+
+  
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.type = "image/png";
+    link.href = brand.favicon;
+
+    document.head.appendChild(link);
+
+  }, []);
+
 
   useEffect(() => {
     AOS.init({
@@ -60,17 +79,6 @@ function App() {
       easing: "ease-in-out",
     });
   }, []);
-
-//   function HomeSwitcher() {
-//   const hostname = window.location.hostname;
-//   console.log(hostname);
-
-//   if (hostname.includes("saasailabs")) {
-//     return <Home/>;
-//   }else{
-//   return <SaasAiHome/> ;
-//   }
-// }
 
 
    function HomeSwitcher() {

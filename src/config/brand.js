@@ -1,19 +1,25 @@
 import saaslogo from '../../src/assets/saalaiLogo.png';
 import codmlogo from "../../src/assets/imgs/template/image17.png";
-const hostname = window.location.hostname;
+import codmFavicon from '../../src/assets/imgs/template/CodmFavicon.svg';
+import SaaaAiFavicon from "../../src/assets/saasfavicon.png";
 
+const hostname = window.location.hostname;
 
 
 const brandConfig = {
   codm: {
     name: "CODM Software",
     logo:codmlogo,
-    key:"codm_Logo"
+    key:"codm_Logo",
+    title : "CODM Software Limited | Top Salesforce Partner",
+    favicon:codmFavicon
   },
   saasai: {
     name: "SaasAi Labs",
     logo: saaslogo,
-    key:"saas_logo"
+    key:"saas_logo",
+    title: "SaasAi Labs | Modern SaaS Solutions",
+    favicon:SaaaAiFavicon
   }
 };
 

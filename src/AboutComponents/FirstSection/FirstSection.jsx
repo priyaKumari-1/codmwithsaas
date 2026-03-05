@@ -17,15 +17,15 @@ const FirstSection = () => {
 
                     <div className='d-lg-flex gap-5 justify-content-center align-items-center'>
                         <div className='col-lg-4 col-sm-12 col-md-5 img-center d-flex justify-content-center align-items-center'>
-                            <img src={about} className='rounded-5 col-lg-12' alt="" width={"100%"} />
+                            <img src={about} className='rounded-5 col-lg-12 paddingCustom' alt="" width={"100%"} />
                         </div>
 
                         <div className='aboutFirstSection mt-3'>
                             <div className='z-0 rotating-img position-relative'>
-                                <img className="rotationdiv" src={icon2} alt="background decoration" />
+                                <img className="rotationdiv" src={icon2} alt="background decoration"/>
                             </div>
 
-                            <div className="pb-3 d-flex justify-content-center justify-content-md-start">
+                            <div className="pb-3 d-flex justify-content-center justify-content-md-start pt-5">
                                 <DotBtn text="ABOUT US" />
                             </div>
 

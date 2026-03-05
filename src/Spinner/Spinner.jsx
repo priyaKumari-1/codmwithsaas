@@ -1,4 +1,4 @@
-import spinnerImg from '../assets/imgs/template/New Favicon.svg';
+import spinnerImg from '../assets/imgs/template/CodmFavicon.svg';
 import './Spinner.css';
 
 function Spinner() {

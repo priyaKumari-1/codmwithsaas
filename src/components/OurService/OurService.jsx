@@ -24,7 +24,7 @@ function OurService() {
   }}>
         {/* content and heading */}
         <div className='text-center'>
-          <div className='d-flex justify-content-center'>
+          <div className='d-flex justify-content-center pt-5'>
              <DotBtn text='What we offer'/>
           </div>
 
