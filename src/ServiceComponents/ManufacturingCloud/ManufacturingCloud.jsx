@@ -7,7 +7,7 @@ function ManufacturingCloud() {
     <HeaderWithBg  title="Salesforce Manufacturing Cloud"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Salesforce Manufacturing Cloud", color: "purple-text"}
                     ]}
     />

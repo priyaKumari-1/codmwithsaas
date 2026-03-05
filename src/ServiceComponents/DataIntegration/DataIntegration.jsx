@@ -10,7 +10,7 @@ function DataIntegration() {
     <HeaderWithBg  title="Data Integration/Migration"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Data Integration/Migration", color: "purple-text" }
                     ]}
     />

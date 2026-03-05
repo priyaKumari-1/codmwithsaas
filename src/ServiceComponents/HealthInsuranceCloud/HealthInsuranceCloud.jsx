@@ -8,7 +8,7 @@ function HealthInsuranceCloud() {
     <HeaderWithBg  title="Salesforce Health & Insurance Cloud"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Salesforce Health & Insurance Cloud", color: "purple-text" }
                     ]}
     />

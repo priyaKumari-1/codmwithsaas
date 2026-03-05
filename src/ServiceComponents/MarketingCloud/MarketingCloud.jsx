@@ -10,7 +10,7 @@ function MarketingCloud() {
      <HeaderWithBg  title="Salesforce Marketing Cloud Services"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Salesforce Marketing Cloud Services", color: "purple-text" }
                     ]}
     />

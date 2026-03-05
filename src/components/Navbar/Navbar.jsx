@@ -97,7 +97,7 @@ function Navbar() {
             <li className="nav-item mega-dropdown d-lg-block serviceLi">
               <div
                 type="button"
-                className="nav-link mobile-toggle d-flex align-items-center gap-1 serviceDiv"
+                className="nav-link mobile-toggle d-flex align-items-center justify-content-between serviceDiv"
                 onClick={() => toggleDropdown("service")}
                 style={{ width: '100%', height: "84px" }}
               >
@@ -107,8 +107,7 @@ function Navbar() {
                 >
                   Services
                 </NavLink>
-
-                <MdKeyboardArrowDown className={openDropdown === "service" ? "rotate" : ""} />
+                <MdKeyboardArrowDown style={{marginTop:".3rem"}} className={`ms-4 m-lg-0 ${openDropdown === "service" ? "rotate" : ""}`} />
               </div>
 
               <div
@@ -350,7 +349,8 @@ function Navbar() {
                   Blogs
                 </NavLink>
                 <MdKeyboardArrowDown
-                  className={openDropdown === "blog" ? "rotate" : ""}
+                style={{marginTop:".3rem"}}
+                  className={`ms-4 m-lg-0 ${openDropdown === "blog" ? "rotate" : ""}`}
                 />
               </div>
 
@@ -458,7 +458,7 @@ function Navbar() {
                 <div className="d-flex align-items-center nav-link text-reset PartnerDiv partnerfontsize"
                   style={{ width: '100%', height: "84px" }}>
                   Partner
-                  <MdKeyboardArrowDown className="ms-1" />
+                  <MdKeyboardArrowDown className="ms-4 m-lg-0" />
                 </div>
 
                 <ul className="partner-dropdown list-unstyled">

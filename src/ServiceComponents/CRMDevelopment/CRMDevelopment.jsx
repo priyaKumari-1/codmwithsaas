@@ -10,7 +10,7 @@ function CRMDevelopment() {
      <HeaderWithBg title="Salesforce CRM"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Salesforce CRM", color: "purple-text" }
                     ]}
     />

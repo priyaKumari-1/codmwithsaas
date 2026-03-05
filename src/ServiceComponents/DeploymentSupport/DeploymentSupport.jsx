@@ -9,7 +9,7 @@ function DeploymentSupport() {
     <HeaderWithBg  title="Deployments"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                        { label:"Service",link:"/ItServices"},
+                        { label:"Services",link:"/ItServices"},
                         { label: "Deployment Support", color: "purple-text" }
                     ]} 
     />

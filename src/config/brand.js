@@ -1,10 +1,12 @@
 import saaslogo from '../../src/assets/saalaiLogo.png';
 import codmlogo from "../../src/assets/imgs/template/image17.png";
-import codmFavicon from '../../src/assets/imgs/template/CodmFavicon.svg';
-import SaaaAiFavicon from "../../src/assets/saasfavicon.png";
+// import codmFavicon from '../../src/assets/imgs/template/CodmFavicon.svg';
+// import SaaaAiFavicon from "../../src/assets/saasfavicon.png";
+
+const codmFavicon = "/CodmFavicon.svg";
+const SaaaAiFavicon = "saasfavicon.png";
 
 const hostname = window.location.hostname;
-
 
 const brandConfig = {
   codm: {

@@ -105,7 +105,7 @@ function BuildingLLMDevelopment_Second() {
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
-                                        <div className="ps-4">
+                                        <div className="ps-5">
                                             <h4 className='font-20'>Data Preprocessing</h4>
                                             <p>
                                                Ensuring data quality and consistency.

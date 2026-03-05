@@ -10,7 +10,7 @@ function DotNetApplication() {
     <HeaderWithBg  title=".NET Application"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: ".NET Application", color: "purple-text" }
                     ]}
     />

@@ -9,7 +9,7 @@ function EnergyUtilitiesCloud() {
   <HeaderWithBg  title="Salesforce Energy and Utilities Cloud"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Salesforce Energy and Utilities Cloud", color: "purple-text" }
                     ]}
     />

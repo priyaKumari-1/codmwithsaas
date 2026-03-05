@@ -9,7 +9,7 @@ function ServiceCloud() {
     <HeaderWithBg title="Salesforce Service Cloud"
                     breadcrumbs={[
                     { label: "Home", link: "/" },
-                    { label:"Service",link:"/ItServices"},
+                    { label:"Services",link:"/ItServices"},
                     { label: "Salesforce Service Cloud", color: "purple-text" }
     ]}
     />

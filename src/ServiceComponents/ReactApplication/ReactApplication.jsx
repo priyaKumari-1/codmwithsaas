@@ -11,7 +11,7 @@ function ReactApplication() {
     <HeaderWithBg  title="React Application"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "React Application", color: "purple-text" }
                     ]}
     />

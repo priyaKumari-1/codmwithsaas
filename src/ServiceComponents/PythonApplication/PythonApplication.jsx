@@ -11,7 +11,7 @@ function PythonApplication() {
     <HeaderWithBg  title="Python Application"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Python Application", color: "purple-text" }
                     ]}
     />

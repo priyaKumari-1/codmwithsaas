@@ -12,7 +12,7 @@ function TechnicalSupport() {
      <HeaderWithBg  title="Technical Support"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Technical Support", color: "purple-text" }
                     ]}
     />

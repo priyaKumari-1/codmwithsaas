@@ -12,7 +12,7 @@ function FinancialServiceCloud() {
      <HeaderWithBg  title="Salesforce Financial Services Cloud"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
-                          { label:"Service",link:"/ItServices"},
+                          { label:"Services",link:"/ItServices"},
                         { label: "Salesforce Financial Services Cloud", color: "purple-text" }
                     ]}
     />
