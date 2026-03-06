@@ -64,63 +64,6 @@ function SalesforceCrm() {
             />
           ))}
         </div>
-        {/* <div className=' d-flex flex-wrap'>
-            <ServiceMainPagePills 
-             pillLabel="Salesforce Education Cloud"
-             title="Salesforce Education Cloud"
-             description="Salesforce Education Cloud is a unified platform designed specifically"
-             
-             link="/ItServices/salesforce-education-cloud"
-            />
-             <ServiceMainPagePills 
-             pillLabel="Salesforce Financial Services"
-             title="Salesforce Financial Services"
-             description="Salesforce Financial Services Cloud (FSC) is a purpose-built CRM platform"
-             link="/ItServices/salesforce-financial-services"
-            />
-             <ServiceMainPagePills                      
-             pillLabel="Salesforce Health & Insurance Cloud"
-             title="Salesforce Health & Insurance Cloud"
-             description="Salesforce Health and Insurance Cloud, prebuilt CRM for the healthcare industries"
-             link="/ItServices/salesforce-health&insurance-cloud"
-            />
-            <ServiceMainPagePills 
-             pillLabel="Salesforce Data Cloud"
-             title=" Salesforce Data Cloud"
-             description="Empower your digital applications with the next generation of AI and real-time data"
-             link="/ItServices/salesforce-data-cloud"
-            />
-             <ServiceMainPagePills 
-             pillLabel="Salesforce Marketing Cloud"
-             title="Salesforce Marketing Cloud"
-             description="Salesforce Marketing Cloud is a comprehensive digital marketing platform designed to"
-             link="/ItServices/saleforce-marketing-cloud"
-            />
-             <ServiceMainPagePills 
-             pillLabel="Salesforce Sales Cloud"
-             title="Salesforce Sales Cloud"
-             description="Salesforce Sales Cloud is a unified platform designed specifically for Sales reps"
-             link="/ItServices/salesforce-sales-cloud"
-            />
-              <ServiceMainPagePills 
-             pillLabel="Salesforce Service Cloud"
-             title="Salesforce Service Cloud"
-             description="Salesforce Service Cloud is a unified platform designed for Digital Support teams"
-             link="/ItServices/salesforce-service-cloud"
-            />
-             <ServiceMainPagePills 
-             pillLabel="Salesforce Energy and Utilities Cloud"
-             title="Salesforce Energy and Utilities Cloud"
-             description="Industry-specific solution for utilities, retail energy, and modern energy services companies"
-             link="/ItServices/salesforce-energy-utilities-cloud"
-            />
-             <ServiceMainPagePills 
-             pillLabel="Salesforce Manufacturing Cloud"
-             title="Salesforce Manufacturing Cloud"
-             description="Industry-specific solution increasing collaboration and transparency between sales, operations, and partners."
-             link="/ItServices/salesforce-manufacturingcloud"
-            />
-            </div> */}
       </div>
     </>
   );

@@ -104,11 +104,12 @@ function Navbar() {
                 <NavLink
                   to="/ItServices"
                   className="text-decoration-none text-reset"
+                  onClick={handleNavItemClick}
                 >
                   Services
                 </NavLink>
                 <MdKeyboardArrowDown style={{marginTop:".3rem"}} className={`ms-4 m-lg-0 ${openDropdown === "service" ? "rotate" : ""}`} />
-              </div>
+              </div> 
 
               <div
                 className={`dropdown-menu mega-menu dropdown-menu-service ${openDropdown === "service" ? "" : ""
@@ -144,7 +145,7 @@ function Navbar() {
                           className="dropdown-item"
                           onClick={handleNavItemClick}
                         >
-                          Salesforce Health & Insurance Cloud
+                          Salesforce Health & Insurance Clode
                         </Link>
 
                         <Link
@@ -161,7 +162,6 @@ function Navbar() {
                         >
                           Salesforce Marketing Cloud
                         </Link>
-
                       </div>
                       <div>
 
@@ -345,7 +345,9 @@ function Navbar() {
                 style={{ width: '100%', height: "84px" }}
               >
                 <NavLink to="/blog"
-                  className="text-decoration-none text-reset">
+                className="text-decoration-none text-reset"
+                onClick={handleNavItemClick} 
+                  >
                   Blogs
                 </NavLink>
                 <MdKeyboardArrowDown

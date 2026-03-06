@@ -23,13 +23,13 @@ const services = [
         icon: FaCloud,
         title: "Industries Cloud Solutions",
         description:
-            "Specialized solutions for Financial Services, Healthcare, Insurance, Telecommunications, and Education sectors. We leverage Salesforce Industries Cloud to deliver 360-degree views of your clients.",
+            "Specialized solutions for Financial Services, Healthcare, Insurance, Telecommunications, and Education sectors. We leverage Salesforce Industries Cloud to deliver 360 degree views of your clients.",
     },
     {
         icon: FaRobot,
         title: "AI & Agentforce",
         description:
-            "Enhance customer support with AI-driven automation and Agentforce solutions. We integrate cutting-edge AI and LLMs to provide real-time data insights and smarter service delivery.",
+            "Enhance customer support with AI driven automation and Agentforce solutions. We integrate cutting edge AI and LLMs to provide real time data insights and smarter service delivery.",
     },
     {
         icon: FaCode,
@@ -47,7 +47,7 @@ const services = [
     icon: FaCogs,
     title: "Technical & Deployment Support",
     description:
-        "Reliable deployment and technical support covering environment setup, releases, monitoring, and post-deployment stability.",
+        "Reliable deployment and technical support covering environment setup, releases, monitoring, and post deployment stability.",
 }
 ];
 

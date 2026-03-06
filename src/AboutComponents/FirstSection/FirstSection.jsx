@@ -29,7 +29,7 @@ const FirstSection = () => {
                                 <DotBtn text="ABOUT US" />
                             </div>
 
-                            <p className='text-center text-md-start'> CODM Software Limited, incorporated December 7, 2023, is a rapidly expanding technology consulting and software development company headquartered in London with offices in Birmingham, United Kingdom. We specialize in delivering comprehensive, enterprise-scale Salesforce CRM solutions combined with cutting-edge custom development and AI-powered technologies.</p>
+                            <p className='text-center text-md-start'> CODM Software Limited, incorporated December 7, 2023, is a rapidly expanding technology consulting and software development company headquartered in London with offices in Birmingham, United Kingdom. We specialize in delivering comprehensive, enterprise scale Salesforce CRM solutions combined with cutting edge custom development and AI powered technologies.</p>
 
                             <p className='text-center text-md-start'>With a focus on quality, innovation, and measurable business impact, we help organizations across diverse industries Financial Services, Healthcare, Manufacturing, Education, Retail, and Technology transform their operations, enhance customer experiences, and accelerate growth through intelligent automation and strategic technology implementation.</p>
 

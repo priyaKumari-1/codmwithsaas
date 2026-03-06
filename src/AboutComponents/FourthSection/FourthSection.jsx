@@ -43,7 +43,7 @@ const FourthSection = () => {
           </div>
           <h3 className="ds-3 my-3">Our Certificates</h3>
           <p className="fs-5">
-            Our certifications validate expertise in cutting-edge technologies,
+            Our certifications validate expertise in cutting edge technologies,
             <br />
             showcasing professional skills and industry readiness.
           </p>
@@ -66,10 +66,7 @@ const FourthSection = () => {
             </div>
           ))}
         </div>
-        {/* event section  */}
-
-        {/* <EventsGallery/> */}
-
+        
      
       </div>
     </section>

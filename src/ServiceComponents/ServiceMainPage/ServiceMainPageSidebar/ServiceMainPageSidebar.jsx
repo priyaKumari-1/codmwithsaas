@@ -7,6 +7,7 @@ import ApiIntegrationTab from "../ServiceTabsPages/ApiIntegrationTab";
 import DataIntegrationTab from "../ServiceTabsPages/DataIntegrationTab";
 import DotNetApplicationTab from "../ServiceTabsPages/DotNetApplicationTab";
 import TechnicalSupportTab from "../ServiceTabsPages/TechnicalSupportTab";
+import BuildingLLMTab from "../ServiceTabsPages/BuildingLLMTab";
 
 export default function ServiceMainPageSidebar() {
   const [activeTab, setActiveTab] = useState("salesforce");
@@ -18,6 +19,7 @@ export default function ServiceMainPageSidebar() {
     { id: "data", label: "Data Integration/Migration" },
     { id: "dotnet", label: ".NET Application" },
     { id: "support", label: "Technical Support" },
+    { id: "LLM" ,   label :"Building LLM"}
   ];
 
   const renderContent = () => {
@@ -58,6 +60,12 @@ export default function ServiceMainPageSidebar() {
             <TechnicalSupportTab/>
           </>
         );
+      case "LLM":
+        return (
+          <>
+        <BuildingLLMTab/>
+          </>
+        )  
       default:
         return null;
     }

@@ -44,3 +44,12 @@
 .terms-container a:hover {
   text-decoration: underline;
 }
+
+/* responsive */
+
+@media (max-width:540px){
+  .terms-container {
+    padding-left:  1rem;
+    padding-right: 1rem;
+  }
+}

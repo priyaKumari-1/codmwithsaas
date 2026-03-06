@@ -5,15 +5,15 @@ const TermsAndConditions = () => {
     <div className="terms-container">
       <h1 className="terms-title text-center">Terms and Conditions</h1>
       <p>
-        Welcome to <strong>CODM Software Limited</strong>
-        These Terms and Conditions govern your use of our website{" "}
+        Welcome to <strong>CODM Software Limited </strong>
+        These Terms and Conditions govern your use of our website {" "}
         <a
           href="https://codmsoftware.co.uk/"
           target="_blank"
           rel="noreferrer"
         >
           https://codmsoftware.co.uk/
-        </a>.
+        </a>
       </p>
 
       <p>
