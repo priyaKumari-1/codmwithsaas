@@ -451,7 +451,7 @@ function Navbar() {
                   </Link>
                   <Link
                     className="dropdown-item"
-                    to="/blog/Salesforce-Einstein"
+                    to="/blog/salesforce-einstein-ai-synergy"
                     onClick={handleNavItemClick}  
                   >
                     Salesforce AI + Synergy
@@ -479,7 +479,7 @@ function Navbar() {
                 <li><NavLink to="/blog/trigger-framework" onClick={handleNavItemClick}>Trigger Framework</NavLink></li>
                 <li><NavLink to="/blog/AI-Powered-Dashboard" onClick={handleNavItemClick}>Pharmaceutical Dashboard</NavLink></li>
                 <li><NavLink to="/blog/salesforceagentforce" onClick={handleNavItemClick}>Agentforce Implementation</NavLink></li>
-                <li><NavLink to="/blog/Salesforce-Einstein" onClick={handleNavItemClick}>Salesforce AI + Synergy</NavLink></li>
+                <li><NavLink to="/blog/salesforce-einstein-ai-synergy" onClick={handleNavItemClick}>Salesforce AI + Synergy</NavLink></li>
                 <li><NavLink to="/blog/Salesforce-Revenue-Cloud" onClick={handleNavItemClick}> Salesforce CPQ to Revenue Cloud</NavLink></li>
               </ul>
             </li>

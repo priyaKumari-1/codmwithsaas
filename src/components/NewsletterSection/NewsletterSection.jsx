@@ -91,7 +91,7 @@ function NewsletterSection() {
                 <div className="row align-items-center fix text-center position-relative z-1">
 
                     {/* Left side (Salesforce Expertise) */}
-                    <div className="col-lg-6 my-4">
+                    <div className="col-lg-6 my-5">
                         <h3 className="fw-bold mb-3">Our Salesforce Expertise</h3>
                         <p className="mb-4 px-10">
                             Our team of certified Salesforce experts brings deep <br /> knowledge and

@@ -56,7 +56,7 @@ const blogsData = [
     title: 'Unlocking Business Value with Salesforce AI Synergy',
     description:
       'By combining Salesforce AI capabilities with enterprise data, organizations can drive predictive insights, smarter decisions, and personalized experiences.',
-    link: '/blog/Salesforce-Einstein',
+    link: '/blog/salesforce-einstein-ai-synergy',
   },
   {
     id: 6,

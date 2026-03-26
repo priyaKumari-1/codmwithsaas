@@ -9,15 +9,15 @@ function SalesforceEinstein() {
   return (
     <>
     <HeaderWithBg
-                    title="Salesforce Trigger Framework"
+                    title="Salesforce Einstein + AI Synergy"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
                         { label:"Blog",link:"/blog"},
-                        { label: "Salesforce Trigger Framework", color: "purple-text" }
+                        { label: "Salesforce Einstein + AI Synergy", color: "purple-text" }
                     ]}
     />
     <SalesforceEinstein_first/>
-    <BlogFormSection heading='Share Your Thoughts on Our Salesforce Trigger Framework'/>
+    <BlogFormSection heading='Share Your Thoughts on Our Salesforce Einstein + AI Synergy'/>
     <BlogSection/>
     </>
   )

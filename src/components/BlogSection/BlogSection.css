@@ -30,11 +30,10 @@
     height: 33rem;
 }
 
-/* 
-.blogHomeContainer:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-} */
+.slide-content .swiper-pagination {
+  margin-top: 20px;   
+  position: relative; 
+}
 
 .animate-fade-in {
     animation: fadeIn 1s ease-out;
