@@ -19,6 +19,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollOnTop from '../../components/ScrollOnTop/ScrollOnTop'
 import CarouselSectionCard from '../../components/CarouselSection/CarouselSectionCard';
+import SEO from '../../SeoData/SEO';
 
 function Home() {
   useEffect(() => {
@@ -32,6 +33,13 @@ function Home() {
 
   return (
     <>
+      <SEO
+      title="CODM Software Limited | Salesforce Partner & AI Software Experts"
+        description="Custom CRM & AI-powered software development from trusted Salesforce consulting partner CODM Software Limited."
+        url="https://codmsoftware.co.uk"
+        image="https://yourwebsite.com/images/salesforce-education-cloud.jpg"
+      />
+
       <div className='homepageFirstContainer'>
       <Hero />
       {/* <PartnerLogo/> */}

@@ -1,10 +1,11 @@
 import "./S_firstSection.css";
-// import bgImg from '../../assets/imgs/page-header/bg-line.png';
 import bgImg from "../../../assets/imgs/page-header/bg-line.png";
+import {Helmet} from "react-helmet";
 
 const S_firstSection = () => {
   return (
     <>
+   
     <section className="S_firstSection_Container section-page-header py-10 fix position-relative">
       <div className="container position-relative z-1 mt-5">
         <div className="text-md-start">

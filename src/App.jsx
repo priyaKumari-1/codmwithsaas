@@ -47,6 +47,7 @@ import TermsAndConditions from './TermsAndConditions/TermsAndConditions';
 import NonprofitCloud from './ServiceComponents/NonprofitCloud/NonprofitCloud';
 import AgentforceAI from './BlogsComponents/AgentforceAI/AgentforceAI';
 import SaasAiHome from './pages/Home/SaasAiHome';
+import { Helmet } from 'react-helmet';
 
 // home page condition
 import brand from "../src/config/brand";
@@ -86,11 +87,19 @@ function App() {
      return <SaasAiHome/>;  
   }
    return <Home />;
+  //  return <SaasAiHome/>;  
 }
-
 
   return (
     <>
+      <Helmet>
+        <title>CODM Software Limited | Top Salesforce Partner</title>
+        <meta
+          name="description"
+          content="CODM Software provides custom software development, Salesforce consulting, AI solutions, and enterprise applications."
+        />
+      </Helmet>
+
       <ScrollOnTop />
       useAutoRefresh()
 

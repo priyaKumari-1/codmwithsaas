@@ -276,11 +276,9 @@ function AgentforceFinancialServices_FirstSection() {
                     </div>
 
                     {/* form section */}
-                        <BlogFormSection/>
-
+                        <BlogFormSection heading="Share Your Thoughts on Our Financial Service Cloud"/>
                     <BlogSection/>
-
-
+                    
                 </div>
             </div>
         </>

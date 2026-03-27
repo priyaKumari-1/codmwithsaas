@@ -16,7 +16,7 @@ function Hero1() {
                                 to improve customer satisfaction, increase sales, and build
                                 long-term relationships.
                              </p>
-                            <p className="text-gray-600">
+                            <p className="text-gray-600 text-center text-sm-start">
                                 A CRM works by collecting customer information from multiple
                                 channels such as websites, emails, calls, and social media, and
                                 storing it in one centralized platform that teams can easily

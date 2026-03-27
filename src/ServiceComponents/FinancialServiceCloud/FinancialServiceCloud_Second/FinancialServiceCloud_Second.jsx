@@ -21,20 +21,7 @@ import ServiceSidebar from '../../ServiceSidebar/ServiceSidebar';
 
 function FinancialServiceCloud_Second() {
 
-    // const features = [
-    //     [
-    //         { icon: checkImg, text: "Client 360 View" },
-    //         { icon: checkImg, text: "Relationship Management" }
-    //     ],
-    //     [
-    //         { icon: checkImg, text: "Action Plans & Workflows" },
-    //         { icon: checkImg, text: "Financial Goal Tracking" }
-    //     ],
-    //     [
-    //         { icon: checkImg, text: "Client Interaction Tracking" },
-    //         { icon: checkImg, text: "Regulatory Compliance Tools" }
-    //     ]
-    // ];
+
 
 
     return (

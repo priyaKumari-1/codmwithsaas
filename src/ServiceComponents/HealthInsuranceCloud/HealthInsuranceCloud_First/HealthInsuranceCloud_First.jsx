@@ -42,7 +42,7 @@ function HealthInsuranceCloud_First() {
                     <div className="col-lg-8 pt-5 ps-lg-4 mt-lg-0 mt-8 content">
 
                         <HeadingContent
-                        title="What is Salesforce Health Cloud & Insurance Cloud ?"
+                        title="What is Health Cloud & Insurance Cloud ?"
                         />
 
                         <img
