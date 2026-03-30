@@ -11,7 +11,7 @@ function ReactApplication() {
       <SEO
         title="React Application Development Services | Modern Web Apps | CODM Software"
         description="Build fast, scalable, and modern web applications with React. CODM Software delivers high-performance React solutions with seamless user experiences."
-        url="https://codmsoftware.co.uk/ItServices/React-Application"
+        url="https://codmsoftware.co.uk/ItServices/react-application-development"
         keywords="React development services, React application development, frontend development, JavaScript frameworks, SPA development, modern web apps, CODM Software"
       />
       <HeaderWithBg title="React Application"

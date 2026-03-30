@@ -8,7 +8,7 @@ function S_rightSidebarDataDevelopment() {
         <>
             <div className="mt-5">
                 <NavLink
-                    to="/ItServices/SalesforceCRM"
+                    to="/ItServices/crm-development"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -25,7 +25,7 @@ function S_rightSidebarDataDevelopment() {
                 </NavLink>
 
                 <NavLink
-                    to="/ItServices/DotNetApplication"
+                    to="/ItServices/dotnet-application-development"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -42,7 +42,7 @@ function S_rightSidebarDataDevelopment() {
                 </NavLink>
 
                 <NavLink
-                    to="/ItServices/React-Application"
+                    to="/ItServices/react-application-development"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -108,7 +108,7 @@ function S_rightSidebarDataDevelopment() {
                     </svg>
                 </NavLink>
                 <NavLink
-                    to="/ItServices/Technical-Support"
+                    to="/ItServices/technical-support"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -124,7 +124,7 @@ function S_rightSidebarDataDevelopment() {
                     </svg>
                 </NavLink>
                 <NavLink
-                    to="/ItServices/BuildingLLM"
+                    to="/ItServices/building-llm"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -140,7 +140,7 @@ function S_rightSidebarDataDevelopment() {
                     </svg>
                 </NavLink>
                 <NavLink
-                    to="/ItServices/python-Application"
+                    to="/ItServices/python-application-development"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -156,7 +156,7 @@ function S_rightSidebarDataDevelopment() {
                     </svg>
                 </NavLink> 
                  <NavLink
-                    to="/ItServices/Deployment-Support"
+                    to="/ItServices/deployment-support"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`

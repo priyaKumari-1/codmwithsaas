@@ -11,7 +11,7 @@ function PythonApplication() {
       <SEO
         title="Python Application Development Services | Scalable Solutions | CODM Software"
         description="Build powerful and scalable applications with Python development services. CODM Software delivers secure, high-performance solutions for web, AI, and data-driven applications."
-        url="https://codmsoftware.co.uk/ItServices/python-Application"
+        url="https://codmsoftware.co.uk/ItServices/python-application-development"
         keywords="Python development services, Python application development, web development with Python, AI development Python, data-driven applications, backend development Python, CODM Software"
       />
       <HeaderWithBg title="Python Application"

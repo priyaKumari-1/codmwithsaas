@@ -11,7 +11,7 @@ function TechnicalSupport() {
       <SEO
         title="Technical Support Services | IT Support & Maintenance | CODM Software"
         description="Ensure smooth business operations with reliable technical support services. CODM Software offers IT support, system maintenance, and fast issue resolution."
-        url="https://codmsoftware.co.uk/ItServices/Technical-Support"
+        url="https://codmsoftware.co.uk/ItServices/technical-support"
         keywords="technical support services, IT support services, system maintenance, software support, managed IT services, troubleshooting support, CODM Software"
       />
       <HeaderWithBg title="Technical Support"

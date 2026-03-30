@@ -10,7 +10,7 @@ function AIPoweredDashboard() {
       <SEO
         title="AI-Powered Dashboards: Benefits, Features & Use Cases | CODM Software"
         description="Discover how AI-powered dashboards transform data into real-time insights. Learn key features, benefits, and use cases for smarter business decisions."
-        url="https://codmsoftware.co.uk/blog/AI-Powered-Dashboard"
+        url="https://codmsoftware.co.uk/blog/ai-powered-dashboard"
         keywords="AI powered dashboard, AI dashboards, business intelligence AI, real-time analytics dashboard, predictive analytics tools, data visualization AI, CODM Software"
       />
       <HeaderWithBg

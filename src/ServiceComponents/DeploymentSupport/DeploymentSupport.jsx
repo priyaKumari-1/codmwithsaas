@@ -10,7 +10,7 @@ function DeploymentSupport() {
       <SEO
         title="Deployment Support Services | Smooth Software Deployment | CODM Software"
         description="Ensure seamless software deployment with expert support from CODM Software. Minimize downtime, reduce risks, and achieve efficient system implementation."
-        url="https://codmsoftware.co.uk/ItServices/Deployment-Support"
+        url="https://codmsoftware.co.uk/ItServices/deployment-support"
         keywords="deployment support services, software deployment, application deployment, system implementation, DevOps deployment, release management, CODM Software"
       />
       <HeaderWithBg title="Deployments"

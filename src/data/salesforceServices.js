@@ -32,7 +32,7 @@ export const salesforceServices = [
     pillLabel: "Salesforce Marketing Cloud",
     description:
       "Salesforce Marketing Cloud is a comprehensive digital marketing platform designed to",
-    link: "/ItServices/saleforce-marketing-cloud",
+    link: "/ItServices/salesforce-marketing-cloud",
   },
   {
     title: "Salesforce Sales Cloud",

@@ -10,7 +10,7 @@ function BlogSidebar() {
         <>
             <div className="mt-5">
                 <NavLink 
-                    to="/blog/Salesforce-Revenue-Cloud"
+                    to="/blog/salesforce-revenue-cloud"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -44,7 +44,7 @@ function BlogSidebar() {
                 </NavLink>
 
                 <NavLink
-                    to="/blog/AI-Powered-Dashboard"
+                    to="/blog/ai-powered-dashboard"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -62,7 +62,7 @@ function BlogSidebar() {
                 </NavLink>
 
                 <NavLink
-                    to="/blog/salesforceagentforce"
+                    to="/blog/salesforce-agentforce"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -112,7 +112,7 @@ function BlogSidebar() {
                 </NavLink>
 
                  <NavLink
-                    to="/blog/AgentforceFinancialServices"
+                    to="/blog/agentforce-financial-services"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`
@@ -128,7 +128,7 @@ function BlogSidebar() {
                 </NavLink>
 
                   <NavLink 
-                    to="/blog/AgentforceAI"
+                    to="/blog/agentforce-ai"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`

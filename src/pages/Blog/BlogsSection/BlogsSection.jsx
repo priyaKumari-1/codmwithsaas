@@ -38,7 +38,7 @@ const blogsData = [
     title: 'Intelligent AI-Powered CRM for Pharmaceutical Industry',
     description:
       'Salesforce dashboards empower pharmaceutical teams with real-time insights into sales performance, compliance tracking, and market trends.',
-    link: '/blog/AI-Powered-Dashboard',
+    link: '/blog/ai-powered-dashboard',
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const blogsData = [
     title: 'Agentforce Implementation: Smarter Service Operations',
     description:
       'Discover how Agentforce enhances service workflows through automation, AI-driven insights, and unified customer engagement across channels.',
-    link: '/blog/salesforceagentforce',
+    link: '/blog/salesforce-agentforce',
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const blogsData = [
     title: 'Migrating from Salesforce CPQ to Revenue Cloud',
     description:
       'Transitioning from CPQ to Revenue Cloud streamlines quoting, billing, and revenue recognition while supporting scalable growth strategies.',
-    link: '/blog/Salesforce-Revenue-Cloud',
+    link: '/blog/salesforce-revenue-cloud',
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const blogsData = [
     title: 'Salesforce Financial Service Cloud for Modern Banking',
     description:
       'Financial Service Cloud enables banks and financial institutions to deliver personalized, compliant, and data-driven customer experiences.',
-    link: '/blog/AgentforceFinancialServices',
+    link: '/blog/agentforce-financial-services',
   },
   {
   id: 8,
@@ -83,7 +83,7 @@ const blogsData = [
   title: 'Agentforce Vibes: AI Powered Salesforce Development Experience',
   description:
     'Agentforce Vibes enhances Salesforce development by enabling AI-assisted app creation, automated deployments, and streamlined lead management workflows directly within VS Code.',
-  link: '/blog/AgentforceAI',
+  link: '/blog/agentforce-ai',
 },
 
 ];

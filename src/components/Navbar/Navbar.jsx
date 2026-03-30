@@ -156,7 +156,7 @@ function Navbar() {
                           Salesforce Data Cloud
                         </Link>
                         <Link
-                          to="/ItServices/saleforce-marketing-cloud"
+                          to="/ItServices/salesforce-marketing-cloud"
                           className="dropdown-item"
                           onClick={handleNavItemClick}
                         >
@@ -237,35 +237,35 @@ function Navbar() {
                   <div className="col-md-2">
                     <h6 className="text-uppercase fw-bold mb-3">Development</h6>
                     <Link
-                      to="/ItServices/SalesforceCRM"
+                      to="/ItServices/crm-development"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
                       CRM Development
                     </Link>
                     <Link
-                      to="/ItServices/BuildingLLM"
+                      to="/ItServices/building-llm"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
                       Building LLM
                     </Link>
                     <Link
-                      to="/ItServices/DotNetApplication"
+                      to="/ItServices/dotnet-application-development"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
                       .NET Application
                     </Link>
                     <Link
-                      to="/ItServices/React-Application"
+                      to="/ItServices/react-application-development"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
                       React Application
                     </Link>
                     <Link
-                      to="/ItServices/python-Application"
+                      to="/ItServices/python-application-development"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
@@ -276,14 +276,14 @@ function Navbar() {
                   <div className="col-md-2">
                     <h6 className="text-uppercase fw-bold mb-3">Support</h6>
                     <Link
-                      to="/ItServices/Technical-Support"
+                      to="/ItServices/technical-support"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
                       Technical Support
                     </Link>
                     <Link
-                      to="/ItServices/Deployment-Support"
+                      to="/ItServices/deployment-support"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
@@ -304,7 +304,7 @@ function Navbar() {
                 <li><NavLink to="/ItServices/salesforce-financial-services" onClick={handleNavItemClick}>Salesforce Financial Services</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-health&insurance-cloud" onClick={handleNavItemClick}>Salesforce Health & Insurance Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-data-cloud" onClick={handleNavItemClick}>Salesforce Data Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/saleforce-marketing-cloud" onClick={handleNavItemClick}>Salesforce Marketing Cloud</NavLink></li>
+                <li><NavLink to="/ItServices/salesforce-marketing-cloud" onClick={handleNavItemClick}>Salesforce Marketing Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-sales-cloud" onClick={handleNavItemClick}>Salesforce Sales Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-service-cloud" onClick={handleNavItemClick}>Salesforce Service Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-energy-utilities-cloud" onClick={handleNavItemClick}>Salesforce Energy and Utilities Cloud</NavLink></li>
@@ -319,17 +319,17 @@ function Navbar() {
 
                 {/* Development */}
                 <li className="accordion-title mt-3">Development</li>
-                <li><NavLink to="/ItServices/SalesforceCRM" onClick={handleNavItemClick}>CRM Development</NavLink></li>
-                <li><NavLink to="/ItServices/BuildingLLM" onClick={handleNavItemClick}>Building LLM</NavLink></li>
-                <li><NavLink to="/ItServices/DotNetApplication" onClick={handleNavItemClick}>.NET Application</NavLink></li>
-                <li><NavLink to="/ItServices/React-Application" onClick={handleNavItemClick}>React Application</NavLink></li>
-                <li><NavLink to="/ItServices/python-Application" onClick={handleNavItemClick}>Python Application</NavLink></li>
+                <li><NavLink to="/ItServices/crm-development" onClick={handleNavItemClick}>CRM Development</NavLink></li>
+                <li><NavLink to="/ItServices/building-llm" onClick={handleNavItemClick}>Building LLM</NavLink></li>
+                <li><NavLink to="/ItServices/dotnet-application-development" onClick={handleNavItemClick}>.NET Application</NavLink></li>
+                <li><NavLink to="/ItServices/react-application-development" onClick={handleNavItemClick}>React Application</NavLink></li>
+                <li><NavLink to="/ItServices/python-application-development" onClick={handleNavItemClick}>Python Application</NavLink></li>
 
                 {/* Support */}
                 <li className="accordion-title mt-3">Support</li>
 
-                <li><NavLink to="/ItServices/Technical-Support" onClick={handleNavItemClick}>Technical Support</NavLink></li>
-                <li><NavLink to="/ItServices/Deployment-Support" onClick={handleNavItemClick}> Deployment Support</NavLink></li>
+                <li><NavLink to="/ItServices/technical-support" onClick={handleNavItemClick}>Technical Support</NavLink></li>
+                <li><NavLink to="/ItServices/deployment-support" onClick={handleNavItemClick}> Deployment Support</NavLink></li>
 
               </ul>
 
@@ -378,14 +378,14 @@ function Navbar() {
                   </Link>
                   <Link
                     className="dropdown-item"
-                    to="/blog/AI-Powered-Dashboard"
+                    to="/blog/ai-powered-dashboard"
                     onClick={handleNavItemClick}
                   >
                     Pharmaceutical Dashboard
                   </Link>
                   <Link
                     className="dropdown-item"
-                    to="/blog/salesforceagentforce"
+                    to="/blog/salesforce-agentforce"
                     onClick={handleNavItemClick}
                   >
                     Agentforce Implementation
@@ -399,14 +399,14 @@ function Navbar() {
                   </Link>
                   <Link
                     className="dropdown-item"
-                    to="/blog/Salesforce-Revenue-Cloud"
+                    to="/blog/salesforce-revenue-cloud"
                     onClick={handleNavItemClick}
                   >
                     Salesforce CPQ to Revenue Cloud
                   </Link>
                   <Link
                     className="dropdown-item"
-                    to="/blog/AgentforceFinancialServices"
+                    to="/blog/agentforce-financial-services"
                     onClick={handleNavItemClick}
                   >
                     Salesforce Financial Service Cloud
@@ -414,7 +414,7 @@ function Navbar() {
 
                   <Link
                     className="dropdown-item"
-                    to="/blog/AgentforceAI"
+                    to="/blog/agentforce-ai"
                     onClick={handleNavItemClick}
                   >
                     AI Powered Salesforce Development
@@ -426,10 +426,10 @@ function Navbar() {
               <ul className={`mobile-accordion d-lg-none ${openDropdown === "blog" ? "open" : ""}`}>
                 <li><NavLink to="/blog/integration-framework" onClick={handleNavItemClick}>Integration Framework</NavLink></li>
                 <li><NavLink to="/blog/trigger-framework" onClick={handleNavItemClick}>Trigger Framework</NavLink></li>
-                <li><NavLink to="/blog/AI-Powered-Dashboard" onClick={handleNavItemClick}>Pharmaceutical Dashboard</NavLink></li>
-                <li><NavLink to="/blog/salesforceagentforce" onClick={handleNavItemClick}>Agentforce Implementation</NavLink></li>
+                <li><NavLink to="/blog/ai-powered-dashboard" onClick={handleNavItemClick}>Pharmaceutical Dashboard</NavLink></li>
+                <li><NavLink to="/blog/salesforce-agentforce" onClick={handleNavItemClick}>Agentforce Implementation</NavLink></li>
                 <li><NavLink to="/blog/salesforce-einstein-ai-synergy" onClick={handleNavItemClick}>Salesforce AI + Synergy</NavLink></li>
-                <li><NavLink to="/blog/Salesforce-Revenue-Cloud" onClick={handleNavItemClick}> Salesforce CPQ to Revenue Cloud</NavLink></li>
+                <li><NavLink to="/blog/salesforce-revenue-cloud" onClick={handleNavItemClick}> Salesforce CPQ to Revenue Cloud</NavLink></li>
               </ul>
             </li>
 

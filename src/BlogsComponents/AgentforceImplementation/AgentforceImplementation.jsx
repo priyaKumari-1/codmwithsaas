@@ -10,7 +10,7 @@ function AgentforceImplementation() {
       <SEO
         title="What is Salesforce Agentforce? Features, Benefits & Use Cases | CODM Software"
         description="Learn about Salesforce Agentforce, its features, benefits, and how it enhances customer service with AI-powered automation and intelligent workflows."
-        url="https://codmsoftware.co.uk/blog/salesforceagentforce"
+        url="https://codmsoftware.co.uk/blog/salesforce-agentforce"
         keywords="Salesforce Agentforce, Salesforce AI agents, customer service automation, AI CRM solutions, Salesforce automation tools, intelligent workflows, CODM Software"
       />
       <HeaderWithBg

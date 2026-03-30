@@ -11,7 +11,7 @@ function SalesforceRevenueCloud() {
       <SEO
         title="What is Salesforce Revenue Cloud? Features, Benefits & Use Cases | CODM Software"
         description="Discover Salesforce Revenue Cloud, its features, benefits, and how it streamlines quoting, billing, and revenue management for faster business growth."
-        url="https://codmsoftware.co.uk/blog/Salesforce-Revenue-Cloud"
+        url="https://codmsoftware.co.uk/blog/salesforce-revenue-cloud"
         keywords="Salesforce Revenue Cloud, revenue management Salesforce, CPQ Salesforce, billing automation, quote to cash process, revenue lifecycle management, CODM Software"
       />
       <HeaderWithBg

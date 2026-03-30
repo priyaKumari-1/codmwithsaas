@@ -9,7 +9,7 @@ import ServiceMainPageSidebar from "./ServiceMainPageSidebar/ServiceMainPageSide
 
 
 
-function ServiceMainPage() {
+function ServiceMainPage() {    
     return (
         <div className="ServiceMainPageContainer">
             <SEO

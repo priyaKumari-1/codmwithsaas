@@ -120,7 +120,7 @@ function App() {
               {/* service routes */}
               <Route path="/ItServices" element={<Service />} />
 
-              <Route path="/ItServices" element={<Service />} />
+              {/* <Route path="/ItServices" element={<Service />} /> */}
 
               <Route
                 path="/ItServices/salesforce-education-cloud"
@@ -143,7 +143,7 @@ function App() {
               />
 
               <Route
-                path="/ItServices/saleforce-marketing-cloud"
+                path="/ItServices/salesforce-marketing-cloud"
                 element={<MarketingCloud />}
               />
 
@@ -179,26 +179,26 @@ function App() {
               <Route path="/ItServices/data-migration" element={<DataIntegration />}/>
 
               {/* Development */}
-              <Route path="/ItServices/SalesforceCRM" element={<CRMDevelopment />} />
-              <Route path="/ItServices/BuildingLLM" element={<BuildingLLMDevelopment />} />
-              <Route path="/ItServices/DotNetApplication" element={<DotNetApplication />} />
-              <Route path="/ItServices/React-Application" element={<ReactApplication />} />
-              <Route path="/ItServices/python-Application" element={<PythonApplication />} />
+              <Route path="/ItServices/crm-development" element={<CRMDevelopment />} />
+              <Route path="/ItServices/building-llm" element={<BuildingLLMDevelopment />} />
+              <Route path="/ItServices/dotnet-application-development" element={<DotNetApplication />} />
+              <Route path="/ItServices/react-application-development" element={<ReactApplication />} />
+              <Route path="/ItServices/python-application-development" element={<PythonApplication />} />
 
               {/* Support */}
-              <Route path="/ItServices/Technical-Support" element={<TechnicalSupport />} />
-              <Route path="/ItServices/Deployment-Support" element={<DeploymentSupport/>} />
+              <Route path="/ItServices/technical-support" element={<TechnicalSupport />} />
+              <Route path="/ItServices/deployment-support" element={<DeploymentSupport/>} />
 
               {/* Blog routes*/}
-              <Route path="blog" element={<Blog />} />
+              <Route path="blog" element={<Blog />}/>
               <Route path="/blog/integration-framework" element={<IntegrationFrameworkBlog />} />
               <Route path="/blog/trigger-framework" element={<TriggerframeworkBlog />} />
-              <Route path="/blog/AI-Powered-Dashboard" element={<AIPoweredDashboard />} />
-              <Route path="/blog/salesforceagentforce" element={<AgentforceImplementation />} />
+              <Route path="/blog/ai-powered-dashboard" element={<AIPoweredDashboard />} />
+              <Route path="/blog/salesforce-agentforce" element={<AgentforceImplementation />} />
               <Route path="/blog/salesforce-einstein-ai-synergy" element={<SalesforceEinstein />} />
-              <Route path="/blog/Salesforce-Revenue-Cloud" element={<SalesforceRevenueCloud />} />
-              <Route path="/blog/AgentforceFinancialServices" element={<AgentforceFinancialServices />} />
-              <Route path="/blog/AgentforceAI" element={<AgentforceAI/>} />
+              <Route path="/blog/salesforce-revenue-cloud" element={<SalesforceRevenueCloud />} />
+              <Route path="/blog/agentforce-financial-services" element={<AgentforceFinancialServices />} />
+              <Route path="/blog/agentforce-ai" element={<AgentforceAI/>} />
               
               
               {/* </Route> */}

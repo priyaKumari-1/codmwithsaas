@@ -11,7 +11,7 @@ function MarketingCloud() {
       <SEO
         title="Salesforce Marketing Cloud Services | CODM Software"
         description="Boost customer engagement with Salesforce Marketing Cloud services. Automate campaigns, personalize journeys, and drive better ROI with data-driven marketing."
-        url="https://codmsoftware.co.uk/ItServices/saleforce-marketing-cloud"
+        url="https://codmsoftware.co.uk/ItServices/salesforce-marketing-cloud"
         keywords="Salesforce Marketing Cloud, marketing automation, email marketing CRM, customer journey management, digital marketing platform, personalized campaigns, CODM Software"
       />
       <HeaderWithBg title="Salesforce Marketing Cloud Services"

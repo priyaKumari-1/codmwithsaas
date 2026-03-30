@@ -10,7 +10,7 @@ function CRMDevelopment() {
       <SEO
         title="Salesforce CRM Solutions | Streamline Sales & Customer Management | CODM Software"
         description="Boost business growth with Salesforce CRM solutions. Manage customer relationships, automate workflows, and gain insights to improve sales and service performance."
-        url="https://codmsoftware.co.uk/ItServices/SalesforceCRM"
+        url="https://codmsoftware.co.uk/ItServices/crm-development"
         keywords="Salesforce CRM, CRM solutions, customer relationship management, sales automation CRM, CRM for businesses, customer data management, CODM Software"
       />
       <HeaderWithBg title="Salesforce CRM"

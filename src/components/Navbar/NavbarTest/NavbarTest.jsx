@@ -609,14 +609,14 @@ export default Navbar;
 //                                     </Link>
 //                                     <Link
 //                                         className="dropdown-item"
-//                                         to="/blog/AI-Powered-Dashboard"
+//                                         to="/blog/ai-powered-dashboard"
 //                                         onClick={handleNavItemClick}
 //                                     >
 //                                         Pharmaceutical Dashboard
 //                                     </Link>
 //                                     <Link
 //                                         className="dropdown-item"
-//                                         to="/blog/salesforceagentforce"
+//                                         to="/blog/salesforce-agentforce"
 //                                         onClick={handleNavItemClick}
 //                                     >
 //                                         Agentforce Implementation
@@ -630,7 +630,7 @@ export default Navbar;
 //                                     </Link>
 //                                     <Link
 //                                         className="dropdown-item"
-//                                         to="/blog/Salesforce-Revenue-Cloud"
+//                                         to="/blog/salesforce-revenue-cloud"
 //                                         onClick={handleNavItemClick}
 //                                     >
 //                                         Salesforce CPQ to Revenue Cloud
@@ -641,10 +641,10 @@ export default Navbar;
 //                             <ul className={`mobile-accordion d-lg-none ${openDropdown === "blog" ? "open" : ""}`}>
 //                                 <li><NavLink to="/blog/integration-framework" onClick={handleNavItemClick}>Integration Framework</NavLink></li>
 //                                 <li><NavLink to="/blog/trigger-framework" onClick={handleNavItemClick}>Trigger Framework</NavLink></li>
-//                                 <li><NavLink to="/blog/AI-Powered-Dashboard" onClick={handleNavItemClick}>Pharmaceutical Dashboard</NavLink></li>
-//                                 <li><NavLink to="/blog/salesforceagentforce" onClick={handleNavItemClick}>Agentforce Implementation</NavLink></li>
+//                                 <li><NavLink to="/blog/ai-powered-dashboard" onClick={handleNavItemClick}>Pharmaceutical Dashboard</NavLink></li>
+//                                 <li><NavLink to="/blog/salesforce-agentforce" onClick={handleNavItemClick}>Agentforce Implementation</NavLink></li>
 //                                 <li><NavLink to="/blog/salesforce-einstein-ai-synergy" onClick={handleNavItemClick}>Salesforce AI + Synergy</NavLink></li>
-//                                 <li><NavLink to="/blog/Salesforce-Revenue-Cloud" onClick={handleNavItemClick}> Salesforce CPQ to Revenue Cloud</NavLink></li>
+//                                 <li><NavLink to="/blog/salesforce-revenue-cloud" onClick={handleNavItemClick}> Salesforce CPQ to Revenue Cloud</NavLink></li>
 //                             </ul>
 //                         </li>
 

@@ -91,13 +91,13 @@ function Footer() {
                 <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/">
                   Data Migration
                 </Link>
-                <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/ItServices/React-Application">
+                <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/ItServices/react-application-development">
                   React Application
                 </Link>
-                <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/ItServices/BuildingLLM">
+                <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/ItServices/building-llm">
                   Building LLM
                 </Link>
-                <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/ItServices/Technical-Support">
+                <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/ItServices/technical-support">
                   Technical Support
                 </Link>
               </div>

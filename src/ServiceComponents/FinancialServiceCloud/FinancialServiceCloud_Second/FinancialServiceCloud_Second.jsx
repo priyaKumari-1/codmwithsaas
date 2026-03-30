@@ -41,7 +41,7 @@ function FinancialServiceCloud_Second() {
                                 width={'100%'}
                             />
                             <h4 className="my-3">Salesforce Financial Cloud Services</h4>
-                            <p className="mb-0">Salesforce Financial Services Cloud (FSC) is a purpose-built CRM platform designed for the financial services industry. It provides banks, insurance providers, wealth managers, and fintech companies with a 360-degree view of their clients, helping them build deeper relationships, manage financial goals, streamline operations, and ensure compliance—all in one secure, unified platform.Codm's Salesforce Financial Cloud is tailored to meet the unique needs of financial institutions, enabling them to leverage data-driven insights, automate workflows, and enhance customer engagement.<span className="text-900 fw-bold">
+                            <p className="mb-0">Salesforce Financial Services Cloud (FSC) is a purpose-built CRM platform designed for the financial services industry. It provides banks, insurance providers, wealth managers, and fintech companies with a 360-degree view of their clients, helping them build deeper relationships, manage financial goals, streamline operations, and ensure compliance all in one secure, unified platform.Codm's Salesforce Financial Cloud is tailored to meet the unique needs of financial institutions, enabling them to leverage data-driven insights, automate workflows, and enhance customer engagement.<span className="text-900 fw-bold">
                                     Codm's Salesforce Education Cloud services
                                 </span>{"   "}
                                 Built on the robust Salesforce platform, Education Cloud enables

@@ -9,7 +9,7 @@ function BuildingLLMDevelopment() {
       <SEO
         title="Build Custom LLM Solutions | AI & Large Language Models | CODM Software"
         description="Design and deploy custom Large Language Models (LLMs) with CODM Software. Build AI-powered applications, automate workflows, and unlock advanced data insights."
-        url="https://codmsoftware.co.uk/ItServices/BuildingLLM"
+        url="https://codmsoftware.co.uk/ItServices/building-llm"
         keywords="build LLM, large language models, AI development services, custom AI solutions, generative AI, NLP models, machine learning solutions, CODM Software"
       />
       <HeaderWithBg title="Building LLM"

@@ -12,3 +12,11 @@
     margin-bottom: 1rem;
     line-height: 1.2;
 }
+
+
+
+@media (max-width:578px){
+    .S_firstSection_Container h3{
+    font-size: 26px !important;
+}
+}

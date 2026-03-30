@@ -62,7 +62,7 @@ function ServiceSidebar() {
                 </NavLink>
 
                 <NavLink
-                    to="/ItServices/saleforce-marketing-cloud"
+                    to="/ItServices/salesforce-marketing-cloud"
                     className={({ isActive }) =>
                         `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${isActive ? "active" : ""
                         }`

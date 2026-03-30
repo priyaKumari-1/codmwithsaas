@@ -10,7 +10,7 @@ function AgentforceFinancialServices() {
       <SEO
         title="Salesforce Agentforce for Financial Services: Features, Benefits & Use Cases | CODM Software"
         description="Discover how Salesforce Agentforce transforms financial services with AI-powered automation, improving customer experience, efficiency, and decision-making."
-        url="https://codmsoftware.co.uk/blog/AgentforceFinancialServices"
+        url="https://codmsoftware.co.uk/blog/agentforce-financial-services"
         keywords="Salesforce Agentforce, Agentforce financial services, AI in banking CRM, financial services automation, AI agents Salesforce, insurance automation CRM, CODM Software"
       />
       
