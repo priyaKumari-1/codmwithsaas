@@ -2,6 +2,7 @@
 import { FaShieldAlt, FaFileContract, FaCookieBite } from "react-icons/fa";
 import './PoliciesBar.css';
 import { Link } from "react-router-dom";
+import brand from "../../config/brand";
 
 function PoliciesBar() {
   return (
@@ -32,7 +33,8 @@ function PoliciesBar() {
           {/* Copyright */}
           <div className="col-md-6 text-center">
             <p className="footerPara mb-0">
-              Copyright © 2026 CodM Software Ltd. All Rights Reserved
+              {/* Copyright © 2026 CodM Software Ltd. All Rights Reserved */}
+               {brand.copyright}
             </p>
           </div>
 
