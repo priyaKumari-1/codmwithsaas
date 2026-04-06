@@ -8,7 +8,7 @@ import blog5 from '../../../assets/imgs/blogImgs/SalesforceAi.png';
 import blog6 from '../../../assets/imgs/blogImgs/SalesforceRevenueCloud.png';
 import blog7 from '../../../assets/imgs/services-details-2/AgentforceFinancialServices/AgentfinanceService.webp';
 import blog8 from '../../../assets/imgs/blogImgs/img7.png';
-
+import blog9 from '../../../assets/imgs/blogImgs/salesforce-field-service.webp';
 
 import './BlogsSection.css';
 
@@ -79,12 +79,21 @@ const blogsData = [
   {
   id: 8,
   image: blog8,
-  tag: 'Agentforce',
+  tag: 'Agentforce Vibes',
   title: 'Agentforce Vibes: AI Powered Salesforce Development Experience',
   description:
     'Agentforce Vibes enhances Salesforce development by enabling AI-assisted app creation, automated deployments, and streamlined lead management workflows directly within VS Code.',
   link: '/blog/agentforce-ai',
-},
+  },
+  {
+   id: 9,
+   image: blog9,
+   tag: 'Field Service',
+   title: 'Field Service Automation: Improving Efficiency in Field Operations',
+   description:
+     'Field Service Automation streamlines scheduling, dispatching, and field operations with real-time updates, helping businesses improve productivity and deliver better customer experiences.',
+   link: '/blog/field-service-automation',
+ },
 
 ];
 
@@ -142,7 +151,7 @@ function BlogsSection() {
           </div>
         ))}
     </div>
-    </div >
+    </div>
   );
 }
 

@@ -80,10 +80,9 @@ function S_secondSection() {
 
 
               <h4 className="pt-4 border-top mb-3 mt-5">What is Salesforce Education Cloud?</h4>
-              <p className='mb-4'>Salesforce Education Cloud is a unified platform designed specifically for educational institutions to manage the entire student lifecycle from recruitment and admissions to student success, alumni engagement, and beyond. Built on the robust Salesforce platform, Education Cloud enables institutions to deliver connected and personalized experiences across every touchpoint in a student's journey.Whether you're a K-12 school, college, or global university, Education Cloud helps you stay ahead by integrating data, automating workflows, and enhancing engagement at scale.</p>
+              <p className='mb-4'>Salesforce Education Cloud is a unified platform designed specifically for educational institutions to manage the entire student lifecycle from recruitment and admissions to student success, alumni engagement, and beyond. Built on the robust Salesforce platform, Education Cloud enables institutions to deliver connected and personalized experiences across every touchpoint in a student's journey .Whether you're school, college, or global university, Education Cloud helps you stay ahead by integrating data, automating workflows, and enhancing engagement at scale.</p>
 
               {/* content */}
-
 
               <div className="row">
                 <div className="col-lg-7">
@@ -143,18 +142,17 @@ function S_secondSection() {
                     width={'100%'}
                     alt="Codm"
                   />
-
                 </div>
               </div>
 
 
               {/* next div */}
-              <h4 className="mt-3 pt-3 border-top mb-5">Why Businesses Use Salesforce Education Cloud</h4>
+              <h4 className="mt-3 pt-3 border-top mb-3">Why Businesses Use Salesforce Education Cloud</h4>
               <p className="mb-3">
                 Salesforce Education Cloud redefines how institutions engage with students,
                 faculty, and alumni. By consolidating operations, automating processes, and
-                enhancing communication, it enables institutions to focus on what matters most—
-                student success and long-term impact.
+                enhancing communication, it enables institutions to focus on what matters most
+                student success and long term impact.
               </p>
 
 
@@ -170,7 +168,7 @@ function S_secondSection() {
               <p className="fw-bold text-900">
                 Improved Retention & Graduation Rates:{" "}
                 <span className="fw-medium text-600">
-                  Use AI-driven insights to identify at-risk students early, provide timely
+                  Use AI driven insights to identify at risk students early, provide timely
                   support, and guide them toward successful outcomes.
                 </span>
               </p>
@@ -186,7 +184,7 @@ function S_secondSection() {
               <p className="fw-bold text-900">
                 Personalized Engagement:{" "}
                 <span className="fw-medium text-600">
-                  Send relevant, timely messages via email, SMS, and portals—tailored to
+                  Send relevant, timely messages via email, SMS, and portals tailored to
                   students’ interests, performance, and history.
                 </span>
               </p>
@@ -195,7 +193,7 @@ function S_secondSection() {
                 Better Alumni Relations:{" "}
                 <span className="fw-medium text-600">
                   Enhance donor engagement, plan events, and manage campaigns to maximize
-                  alumni contributions and long-term value.
+                  alumni contributions and long term value.
                 </span>
               </p>
 

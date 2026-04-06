@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./NewsletterSection.css";
 import cpq from "../../assets/imgs/Certifications/CPQ.png";
 import admin from "../../assets/imgs/Certifications/Admin.png";
@@ -86,7 +86,7 @@ function NewsletterSection() {
 
     return (
         <>
-        <section className="section-newsletter pb-120 pt-120 fix position-relative">
+        <section className="section-newsletter pb-120 pt-120 fix position-relative mt-4">
             <div className="container position-relative fix">
                 <div className="row align-items-center fix text-center position-relative z-1">
 

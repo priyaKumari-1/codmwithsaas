@@ -34,7 +34,7 @@ function PoliciesBar() {
           <div className="col-md-6 text-center">
             <p className="footerPara mb-0">
               {/* Copyright © 2026 CodM Software Ltd. All Rights Reserved */}
-               {brand.copyright}
+               {brand.copyright}  
             </p>
           </div>
 

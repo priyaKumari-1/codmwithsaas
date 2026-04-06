@@ -1,3 +1,5 @@
+import './BlogFormSection.css';
+  
 const BlogFormSection = ({
   heading = "Share Your Thoughts on Our Integration Framework",
   subHeading = "Leave a comment",
@@ -8,7 +10,7 @@ const BlogFormSection = ({
       <div className="container position-relative z-1">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <h2 className="mb-4 text-center" style={{ fontWeight: 700 }}>{heading}</h2>
+            <h2 className="blogFormSectionHeading mb-4 text-center" style={{ fontWeight: 700 }}>{heading}</h2>
             <h4 className="mb-5">{subHeading}</h4>
             {/* Form */}
 
@@ -23,7 +25,7 @@ const BlogFormSection = ({
                   <div className="form-group border rounded-1">
                     <input
                       id="name"
-                      placeholder="Enter your name"
+                      placeholder="Enter your name" 
                       required
                       type="text"
                       name="first_name"

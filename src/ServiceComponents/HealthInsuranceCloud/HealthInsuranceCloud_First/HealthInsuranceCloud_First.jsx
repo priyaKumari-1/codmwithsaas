@@ -56,7 +56,7 @@ function HealthInsuranceCloud_First() {
                             content={
                                 <>
                                     <p>
-                                        Salesforce Health Cloud & Insurance Cloud are industry-specific Salesforce platforms designed to help healthcare providers, payers, and insurance companies manage data, improve customer experiences, and streamline operations. Salesforce Health Cloud, Salesforce Health Cloud is built on the world's 1th AI CRM and powered by Agentforce. It serves as a trusted, connected platform for healthcare, bringing together clinical and nonclinical data in one place with actionable intelligence. Health Cloud helps healthcare organizations collaborate efficiently, deliver personalized care, and automate health operations.
+                                        Salesforce Health Cloud & Insurance Cloud are industry specific Salesforce platforms designed to help healthcare providers, payers, and insurance companies manage data, improve customer experiences, and streamline operations. Salesforce Health Cloud, Salesforce Health Cloud is built on the world's 1th AI CRM and powered by Agentforce. It serves as a trusted, connected platform for healthcare, bringing together clinical and nonclinical data in one place with actionable intelligence. Health Cloud helps healthcare organizations collaborate efficiently, deliver personalized care, and automate health operations.
                                     </p>
                                 </>
                             }

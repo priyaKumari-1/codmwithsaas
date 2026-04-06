@@ -1,11 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
-// import blog1 from "../../assets/imgs/blogs/integrationframework.png";
-
-// import blog2 from "../../assets/imgs/blogs/triggerframework.png";
-// import blog3 from "../../assets/imgs/blogs/revenuecloud.png";
-
 import blog1 from '../../assets/imgs/blogs/automation_apexTrigger.webp';
 import blog2 from '../../assets/imgs/services-details-2/triggerframework/img-1.png';
 import blog3 from '../../assets/imgs/blogImgs/pharmaecticalDashboard.png';
@@ -14,9 +8,7 @@ import blog5 from '../../assets/imgs/blogImgs/SalesforceAi.png';
 import blog6 from '../../assets/imgs/blogImgs/SalesforceRevenueCloud.png';
 import blog7 from '../../assets/imgs/services-details-2/AgentforceFinancialServices/AgentfinanceService.webp';
 import blog8 from '../../assets/imgs/blogImgs/img7.png';
-
-// import blog5 from '../../assets/imgs/blogImgs/agentforce.webp';
-// import blog6 from '../../assets/imgs/blogImgs/'
+import blog9 from '../../assets/imgs/blogImgs/salesforce-field-service.webp';
 
 import DotBtn from "../../utils/Dotbtn/Dotbtn";
 import { Link } from "react-router-dom";
@@ -31,7 +23,7 @@ const blogData = [
       tag: 'Integration Framework',
       title: 'Scalable Salesforce Integration Framework',
       description:
-        'A well-designed integration framework ensures seamless data flow between Salesforce and external systems, improving scalability, security, and long-term maintainability.',
+        'A well designed integration framework ensures seamless data flow between Salesforce and external systems, improving scalability, security, and long term maintainability.',
       link: '/blog/integration-framework',
     },
     {
@@ -40,7 +32,7 @@ const blogData = [
       tag: 'Trigger Framework',
       title: 'Salesforce Trigger Frameworks',
       description:
-        'Learn how a structured trigger framework helps manage complex logic, improves code readability, and ensures governor-limit-safe Salesforce implementations. A trigger framework is a structured way to organize and manage apex triggers.',
+        'Learn how a structured trigger framework helps manage complex logic, improves code readability, and ensures governor limit safe Salesforce implementations. A trigger framework is a structured way to organize and manage apex triggers.',
       link: '/blog/trigger-framework',
     },
     {
@@ -92,18 +84,27 @@ const blogData = [
       id: 8,
       image: blog8,
       tag: 'Agentforce',
-      title: 'Agentforce Vibes: AI Powered Salesforce Development Experience',
+      title: 'AI Powered Salesforce Development Experience',
       description:
         'Agentforce Vibes enhances Salesforce development by enabling AI assisted app creation, automated deployments, and streamlined lead management workflows directly within VS Code.',
       link: '/blog/AgentforceVibes',
-        }
+      },
+      {
+        id: 9,
+        image: blog9,
+        tag: 'Field Service',
+        title: 'Improving Efficiency in Field Operations',
+        description:
+          'Field Service Automation streamlines scheduling, dispatching, and field operations with real time updates, helping businesses improve productivity and deliver better customer experiences.',
+        link: '/blog/field-service-automation',
+      },
 ];
 
 function BlogSection() {
 
   return (
-    <section className="blog_section blog_sectionContainer">
-      <div className="container">
+    <section className="blog_section blog_sectionContainer pb-2">
+      <div className="container mb-4">
 
         {/* HEADER */}
         <div className="row align-items-end mb-4">
@@ -168,14 +169,14 @@ function BlogSection() {
                   className="rounded-3"
                 />
                </div>
-                <div className="card-body p-0">
+                <div className="card-body pb-5">
                   <p className="blagCards_btn tag-spacing text-linear-2 text-uppercase mt-3">
                     {item.tag}
                   </p>
-
+ 
                   <div className="blogContentSection m-2">
                     <h5 className="my-3">{item.title}</h5>
-                    <p>{item.description}</p>
+                    <p className="pb-5 mb-5">{item.description}</p>
                   </div>
                 </div>
 

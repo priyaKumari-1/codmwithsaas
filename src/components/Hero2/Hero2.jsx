@@ -1,5 +1,4 @@
 import './Hero2.css'
-
 import oipimg from "../../assets/imgs/features-1/OIP.jpeg";
 import eduImg from "../../assets/imgs/features-1/Education.jpeg";
 import manuImg from "../../assets/imgs/features-1/coe-manufacturing-png-4.png";
@@ -70,7 +69,7 @@ const features = [
     img: transportImg,
     alt: "Energy",
     title: "Energy, Telecommunication & Transport",
-    desc: "Industry clouds provide zero-code capabilities.",
+    desc: "Industry clouds provide zero code capabilities.",
     cloud: "Industries Cloud",
     delay: 300,
   },

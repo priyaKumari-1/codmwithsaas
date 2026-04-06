@@ -14,7 +14,7 @@ function Hero1() {
                                 businesses manage customer data, interactions, and relationships
                                 throughout the entire customer lifecycle. It enables companies
                                 to improve customer satisfaction, increase sales, and build
-                                long-term relationships.
+                                long term relationships.
                              </p>
                             <p className="text-gray-600 text-center text-sm-start">
                                 A CRM works by collecting customer information from multiple

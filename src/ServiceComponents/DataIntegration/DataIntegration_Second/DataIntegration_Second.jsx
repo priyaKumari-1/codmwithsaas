@@ -5,7 +5,7 @@ import icon3 from '../../../assets/imgs/services-details/icon-7.svg';
 import icon1 from '../../../assets/imgs/services-details/icon-5.svg';
 
 // imgs
-import img1 from '../../../assets/imgs/services-details-2/d.i-d.m/img-1.png';
+// import img1 from '../../../assets/imgs/services-details-2/d.i-d.m/img-1.png';
 import img2 from '../../../assets/imgs/services-details/img-2.png';
 import img3 from '../../../assets/imgs/services-details-2/Api/img-4.avif';
 
@@ -25,12 +25,12 @@ function DataIntegration_Second() {
 
             <div className="col-lg-8 pt-1 ps-lg-4 mt-lg-0 mt-3 content pt-5">
 
-              <img
+              {/* <img
                 className="rounded-3"
                 src={img1}
                 alt="Codm"
                 width={'100%'}
-              />
+              /> */}
 
 
               <h4 className="my-3">Unlock Industry-Specific Success with Salesforce Industries Cloud</h4>

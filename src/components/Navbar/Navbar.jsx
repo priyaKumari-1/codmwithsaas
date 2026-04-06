@@ -419,6 +419,14 @@ function Navbar() {
                   >
                     AI Powered Salesforce Development
                   </Link>
+
+                  <Link
+                    className="dropdown-item"
+                    to="/blog/field-service-automation"
+                    onClick={handleNavItemClick}
+                  >
+                    Field Service automation
+                  </Link>
                 </div>
 
               </div>
@@ -430,6 +438,10 @@ function Navbar() {
                 <li><NavLink to="/blog/salesforce-agentforce" onClick={handleNavItemClick}>Agentforce Implementation</NavLink></li>
                 <li><NavLink to="/blog/salesforce-einstein-ai-synergy" onClick={handleNavItemClick}>Salesforce AI + Synergy</NavLink></li>
                 <li><NavLink to="/blog/salesforce-revenue-cloud" onClick={handleNavItemClick}> Salesforce CPQ to Revenue Cloud</NavLink></li>
+                <li><NavLink to="/blog/agentforce-financial-services" onClick={handleNavItemClick}> Salesforce Financial Service Cloud</NavLink></li>
+                <li><NavLink to="/blog/agentforce-ai" onClick={handleNavItemClick}>AI Powered Salesforce Development</NavLink></li>
+                <li><NavLink to="/blog/field-service-automation" onClick={handleNavItemClick}>Field Service automation</NavLink></li>
+            
               </ul>
             </li>
 

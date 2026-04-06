@@ -51,6 +51,7 @@ import { Helmet } from 'react-helmet';
 
 // home page condition
 import brand from "../src/config/brand";
+import FslAutomation from './BlogsComponents/FslAutomation/FslAutomation';
 
 function App() { 
   
@@ -199,6 +200,7 @@ function App() {
               <Route path="/blog/salesforce-revenue-cloud" element={<SalesforceRevenueCloud />} />
               <Route path="/blog/agentforce-financial-services" element={<AgentforceFinancialServices />} />
               <Route path="/blog/agentforce-ai" element={<AgentforceAI/>} />
+              <Route path="/blog/field-service-automation" element={<FslAutomation/>} />
               
               
               {/* </Route> */}

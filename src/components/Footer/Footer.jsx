@@ -125,7 +125,7 @@ function Footer() {
           </div>
 
           {/* ADDRESS */}
-          <div className="footer-column footer-column4 col-12 col-md-6 col-lg-3 text-center text-lg-start">
+          <div className="footer-column footer-column4 col-12 col-md-12 col-lg-3 text-center text-lg-start">
             <h4 className="text-center text-white opacity-50 fs-6 fw-black text-uppercase pb-3">
               Address
             </h4>

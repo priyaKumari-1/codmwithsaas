@@ -1,13 +1,13 @@
 import BlogSidebar from './BlogSidebar';
 import { Link } from "react-router-dom";
 import img1 from '../../assets/imgs/services-details/icon-contact.svg';
-import img2 from '../../assets/imgs/services-details-2/AgentforceVibe/img1.png';
+import img2 from '../../assets/imgs/services-details-2/Service/TopUseCases.png';
 import img3 from '../../assets/imgs/services-details-2/AgentforceVibe/AgentforceVibeImg.png';
 import img4 from '../../assets/imgs/services-details-2/AgentforceVibe/img3.png';
 import hardik from '../../assets/imgs/services-details-2/PharmaDashboard/hardik.png';
 import bgImg from '../../assets/imgs/services-details/bg-line-3.png';
 
-function AgentforceAISidebar() {
+function FslAutomationSidebar() {
   return (
     <div className=''>
         <BlogSidebar/>
@@ -61,31 +61,29 @@ function AgentforceAISidebar() {
                                 </svg>
                             </a>
         
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" viewBox="0 0 16 16">
                                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
                                 </svg>
-                            </a>
+                            </a> */}
+
+                              <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="mailto:info@codmsoftware.co.uk">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
+                                </svg>
+                              </a>
         
                         </div>
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4 border">
                             <img src={img2} className="" width={'100%'}/>
-                            <p className='text-center pt-3'>Salesforce project where Agentforce is deploying a Sales Operation Manager app</p>
+                            <p className='text-center pt-3'>use cases of fsl</p>
                         </div>
-
-                        <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'}/>
-                        </div>
-
-                        <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'}/>
-                        </div>
-            
+                                    
     </div>
   )
 }
 
-export default AgentforceAISidebar;
+export default FslAutomationSidebar;
 
