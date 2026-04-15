@@ -11,10 +11,17 @@ import img9 from '../../assets/imgs/Certifications/PlatformAppBuilder.png';
 import img10 from '../../assets/imgs/Certifications/PD1.png';
 import img11 from '../../assets/imgs/Certifications/PD2.png';
 import img12 from '../../assets/imgs/Certifications/ServiceCloudConsultant.png';
-
 import Dotbtn from '../../utils/Dotbtn/Dotbtn.jsx';
 import './fourthSection.css';
 import { Link } from 'react-router-dom';
+
+// for slider
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination ,Autoplay } from 'swiper/modules';
+
+
 // import EventsGallery from '../EventsGallery/EventsGallery.jsx';
 
 const certificateImages = [
@@ -39,7 +46,7 @@ const FourthSection = () => {
         {/* Header */}
         <div className="fourthSection_Header text-center">
           <div className='d-flex justify-content-center'>
-            <Dotbtn text="OUR EXCELLENCE" data-aos="zoom-in" data-aos-delay="100"/>
+            <Dotbtn text="OUR EXCELLENCE" data-aos="zoom-in" data-aos-delay="100" />
           </div>
           <h3 className="ds-3 my-3">Our Certificates</h3>
           <p className="fs-5">
@@ -50,7 +57,7 @@ const FourthSection = () => {
         </div>
 
         {/* Certificates grid */}
-        <div className="FourthSection_certificates row mt-8 mb-lg-8 m-0">
+        {/* <div className="FourthSection_certificates row mt-8 mb-lg-8 m-0">
           {certificateImages.map((item, i) => (
             <div className="CertificatesCards col-lg-2 col-md-4 mb-lg-4 mb-4 text-center" key={i}>
               <div className="position-relative d-inline-block z-1">
@@ -65,12 +72,68 @@ const FourthSection = () => {
               </div>
             </div>
           ))}
+        </div> */}
+
+        <div className="FourthSection_certificates mt-8 mb-lg-8">
+
+          {/* Swiper for mobile & tablet */}
+          <div className="d-lg-none">
+            <Swiper
+              modules={[Pagination ,Autoplay]}
+              autoplay={{ delay: 1000 }}
+              loop={true}
+              spaceBetween={20}
+              pagination={{ clickable: true }}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+              }}
+            >
+              {certificateImages.map((item, i) => (
+                <SwiperSlide key={i}>
+                  <div className="CertificatesCards text-center">
+                    <div className="position-relative d-inline-block z-1">
+                      <div className="CertificatesCards_Img zoom-img rounded-3">
+                        <img
+                          className={`img-fluid ${i === 2 || i === 11 ? "img-12-custom" : "img-normal"
+                            }`}
+                          src={item.src}
+                          alt={item.alt}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          <div className="row m-0 d-none d-lg-flex">
+            {certificateImages.map((item, i) => (
+              <div
+                className="CertificatesCards col-lg-2 mb-lg-4 text-center"
+                key={i}
+              >
+                <div className="position-relative d-inline-block z-1">
+                  <div className="CertificatesCards_Img zoom-img rounded-3">
+                    <img
+                      className={`img-fluid ${i === 2 || i === 11 ? "img-12-custom" : "img-normal"
+                        }`}
+                      src={item.src}
+                      alt={item.alt}
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
-        
-     
+
+
       </div>
     </section>
   );
 };
-
 export default FourthSection;

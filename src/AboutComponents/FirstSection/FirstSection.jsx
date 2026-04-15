@@ -11,12 +11,15 @@ import isologo from '../../assets/imgs/cta-15/isologo.png';
 
 const FirstSection = () => {
     return (
+        
         <div className='aboutContainerbg p-md-5 p-1'>
             <div className="about_first_section container position-relative">
                 <div>
 
-                    <div className='d-lg-flex gap-5 justify-content-center align-items-center'>
-                        <div className='col-lg-4 col-sm-12 col-md-5 img-center d-flex justify-content-center align-items-center'>
+                    {/* <div className='d-lg-flex gap-5 justify-content-center align-items-center'> */}
+                    <div className='d-flex flex-column flex-lg-row gap-5 justify-content-center align-items-center'>
+                        {/* <div className='col-lg-4 col-sm-12 col-md-5 img-center d-flex justify-content-center align-items-center'> */}
+                        <div className='col-lg-4 col-sm-12 text-center d-flex justify-content-center align-items-center'>
                             <img src={about} className='rounded-5 col-lg-12 paddingCustom' alt="" width={"100%"}/>
                         </div>
 
@@ -25,7 +28,7 @@ const FirstSection = () => {
                                 <img className="rotationdiv" src={icon2} alt="background decoration"/>
                             </div>
 
-                            <div className="pb-3 d-flex justify-content-center justify-content-md-start pt-5">
+                            <div className="pb-3 d-flex justify-content-center justify-content-md-start pt-lg-5">
                                 <DotBtn text="ABOUT US" />
                             </div>
 

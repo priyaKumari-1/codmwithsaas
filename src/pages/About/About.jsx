@@ -1,5 +1,6 @@
 import FifthSection from "../../AboutComponents/FifthSection/FifthSection";
 import FirstSection from "../../AboutComponents/FirstSection/FirstSection";
+import FounderSection from "../../AboutComponents/FounderSection/FounderSection";
 import FourthSection from "../../AboutComponents/FourthSection/FourthSection";
 import Insurance from "../../AboutComponents/Insurance/Insurance";
 import SecondSection from "../../AboutComponents/SecondSection/SecondSection";
@@ -16,6 +17,7 @@ function About() {
   <WhatWeDo/>
   {/* <ThirdSection/> */}
   <FourthSection/>
+   <FounderSection/>
   {/* <Insurance/> */}
   <BlogSection/>
   {/* <FifthSection/> */}
