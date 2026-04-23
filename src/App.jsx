@@ -52,7 +52,11 @@ import { Helmet } from 'react-helmet';
 // home page condition
 import brand from "../src/config/brand";
 import FslAutomation from './BlogsComponents/FslAutomation/FslAutomation';
-import ZeroClick from './ZeroClick/ZeroClick';
+
+
+
+// for auth in smartPortal
+import SmartPortal from './SmartPortal/SmartPortal';
 
 function App() { 
   
@@ -119,7 +123,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
-              {/* <Route path='/test' element={<ZeroClick/>}/> */}
+              <Route path='/test' element={<SmartPortal/>}/>
 
               {/* service routes */}
               <Route path="/ItServices" element={<Service />} />

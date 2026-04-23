@@ -8,8 +8,21 @@ import { BrowserRouter } from 'react-router-dom';
 import "odometer/themes/odometer-theme-default.css";
 import './index.css';
 
+
+// for smart portal
+import { PublicClientApplication } from "@azure/msal-browser";
+import { MsalProvider } from "@azure/msal-react";
+import { msalConfig } from "./authConfig";
+
+
+const msalInstance = new PublicClientApplication(msalConfig);
+
+
+
 createRoot(document.getElementById('root')).render(
-  <ThemeProvider>
+  // <ThemeProvider>
+    <MsalProvider instance={msalInstance}>
     <App />
-  </ThemeProvider>
+    </MsalProvider>
+  // </ThemeProvider>
 )
