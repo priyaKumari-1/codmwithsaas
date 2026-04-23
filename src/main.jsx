@@ -20,9 +20,9 @@ const msalInstance = new PublicClientApplication(msalConfig);
 
 
 createRoot(document.getElementById('root')).render(
-  // <ThemeProvider>
+  <ThemeProvider>
     <MsalProvider instance={msalInstance}>
     <App />
     </MsalProvider>
-  // </ThemeProvider>
+   </ThemeProvider>
 )
