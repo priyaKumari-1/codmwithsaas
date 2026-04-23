@@ -12,6 +12,12 @@ import img10 from '../../assets/imgs/Certifications/PD1.png';
 import img11 from '../../assets/imgs/Certifications/PD2.png';
 import img12 from '../../assets/imgs/Certifications/ServiceCloudConsultant.png';
 import Dotbtn from '../../utils/Dotbtn/Dotbtn.jsx';
+
+import cyberEssentialsimg from '../../assets/imgs/cta-15/cyber-essentials-logo.png';
+import gearsetlogo from '../../assets/imgs/cta-15/gearset-logo.png';
+import googlecloudlogo from '../../assets/imgs/cta-15/googlecloud-logo.png';
+import salesforcelogo from '../../assets/imgs/cta-15/saleforce-logo.png';
+import isologo from '../../assets/imgs/cta-15/isologo.png';
 import './fourthSection.css';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +25,7 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination ,Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 
 // import EventsGallery from '../EventsGallery/EventsGallery.jsx';
@@ -37,6 +43,13 @@ const certificateImages = [
   { src: img10, alt: "PD1" },
   { src: img11, alt: "PD2" },
   { src: img12, alt: "ServiceCloudConsultant" },
+  { src: cyberEssentialsimg, alt: "Cyber Essentials" },
+  { src: gearsetlogo, alt: "Gearset" },
+  { src: googlecloudlogo, alt: "Google Cloud" },
+  { src: salesforcelogo, alt: "Salesforce", extraPadding: true },
+  { src: isologo, alt: "ISO Certification", extraPadding: true },
+
+
 ];
 
 const FourthSection = () => {
@@ -79,7 +92,7 @@ const FourthSection = () => {
           {/* Swiper for mobile & tablet */}
           <div className="d-lg-none">
             <Swiper
-              modules={[Pagination ,Autoplay]}
+              modules={[Pagination, Autoplay]}
               autoplay={{ delay: 1000 }}
               loop={true}
               spaceBetween={20}
@@ -95,9 +108,18 @@ const FourthSection = () => {
                   <div className="CertificatesCards text-center">
                     <div className="position-relative d-inline-block z-1">
                       <div className="CertificatesCards_Img zoom-img rounded-3">
-                        <img
+                        {/* <img
                           className={`img-fluid ${i === 2 || i === 11 ? "img-12-custom" : "img-normal"
                             }`}
+                          src={item.src}
+                          alt={item.alt}
+                        /> */}
+
+                        <img
+                          className={`img-fluid 
+                            ${i === 2 || i === 11 || cyberEssentialsimg ?  "img-12-custom" : "img-normal"} 
+                            ${item.extraPadding ? "pt-4rem" : ""}
+                          `}
                           src={item.src}
                           alt={item.alt}
                         />
@@ -112,11 +134,12 @@ const FourthSection = () => {
           <div className="row m-0 d-none d-lg-flex">
             {certificateImages.map((item, i) => (
               <div
-                className="CertificatesCards col-lg-2 mb-lg-4 text-center"
+                // className="CertificatesCards col-lg-2 mb-lg-4 text-center"
+                className={`CertificatesCards col-lg-2 mb-lg-4 text-center ${item.extraPadding ? "pt-4rem" : ""}`}
                 key={i}
               >
                 <div className="position-relative d-inline-block z-1">
-                  <div className="CertificatesCards_Img zoom-img rounded-3">
+                  <div className="CertificatesCards_Img zoom-img rounded-3"> 
                     <img
                       className={`img-fluid ${i === 2 || i === 11 ? "img-12-custom" : "img-normal"
                         }`}

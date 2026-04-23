@@ -52,6 +52,7 @@ import { Helmet } from 'react-helmet';
 // home page condition
 import brand from "../src/config/brand";
 import FslAutomation from './BlogsComponents/FslAutomation/FslAutomation';
+import ZeroClick from './ZeroClick/ZeroClick';
 
 function App() { 
   
@@ -113,10 +114,12 @@ function App() {
         {/* <SalesforcePartnerLogo/> */}
             <Routes>
               {/* <Route path="/" element={<Home />} /> */}
+             
               <Route path="/" element={<HomeSwitcher/>} /> 
               <Route path="/about" element={<About />} />
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
+              {/* <Route path='/test' element={<ZeroClick/>}/> */}
 
               {/* service routes */}
               <Route path="/ItServices" element={<Service />} />

@@ -79,3 +79,9 @@
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
+
+ .pt-4rem {
+  padding-top: 4rem;
+  margin-right: 2rem;
+  margin-left: .3rem;
+  }
