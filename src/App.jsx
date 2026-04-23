@@ -123,7 +123,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
-              <Route path='/test' element={<SmartPortal/>}/>
+              <Route path='/MyKoda' element={<SmartPortal/>}/>
 
               {/* service routes */}
               <Route path="/ItServices" element={<Service />} />

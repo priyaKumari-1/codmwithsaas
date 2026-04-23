@@ -12,7 +12,7 @@ import './index.css';
 // for smart portal
 import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider } from "@azure/msal-react";
-import { msalConfig } from "./authConfig";
+import { msalConfig } from "./authConfig.js";
 
 
 const msalInstance = new PublicClientApplication(msalConfig);
