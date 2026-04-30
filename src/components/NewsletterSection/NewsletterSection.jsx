@@ -141,12 +141,12 @@ function NewsletterSection() {
                                 Join 52,000+ people on our newsletter
                             </p>
 
-                            <div className="getInput mb-2 mt-4 position-relative">
+                            <div className="getInput mb-5 mt-4 position-relative pb-3">
                               {/* <form className="d-flex flex-wrap" onSubmit={handleSubmit}> */}
                                 <form className="d-flex flex-wrap">
                                 <input
                                     className="inputEmailBtn"
-                                    placeholder="Enter your mail.."
+                                    placeholder="Enter your mail.." 
                                     type="email"
                                     name="name"
                                     value={email}

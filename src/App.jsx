@@ -57,6 +57,7 @@ import FslAutomation from './BlogsComponents/FslAutomation/FslAutomation';
 
 // for auth in smartPortal
 import SmartPortal from './SmartPortal/SmartPortal';
+import SalesforceIIM from './BlogsComponents/SalesforceIIM/SalesforceIIM';
 
 function App() { 
   
@@ -207,7 +208,8 @@ function App() {
               <Route path="/blog/salesforce-revenue-cloud" element={<SalesforceRevenueCloud />} />
               <Route path="/blog/agentforce-financial-services" element={<AgentforceFinancialServices />} />
               <Route path="/blog/agentforce-ai" element={<AgentforceAI/>} />
-              <Route path="/blog/field-service-automation" element={<FslAutomation/>} />
+              <Route path="/blog/field-service-automation" element={<FslAutomation/>} /> 
+              <Route path="/blog/salesforce-llm-crm-automation" element={<SalesforceIIM/>} />              
               
               
               {/* </Route> */}

@@ -427,8 +427,15 @@ function Navbar() {
                   >
                     Field Service automation
                   </Link>
-                </div>
 
+                  <Link
+                    className="dropdown-item"
+                    to="/blog/salesforce-llm-crm-automation"
+                    onClick={handleNavItemClick}
+                  >
+                     LLM in Salesforce
+                  </Link>
+                </div>
               </div>
 
               <ul className={`mobile-accordion d-lg-none ${openDropdown === "blog" ? "open" : ""}`}>
@@ -441,6 +448,7 @@ function Navbar() {
                 <li><NavLink to="/blog/agentforce-financial-services" onClick={handleNavItemClick}> Salesforce Financial Service Cloud</NavLink></li>
                 <li><NavLink to="/blog/agentforce-ai" onClick={handleNavItemClick}>AI Powered Salesforce Development</NavLink></li>
                 <li><NavLink to="/blog/field-service-automation" onClick={handleNavItemClick}>Field Service automation</NavLink></li>
+                <li><NavLink to="/blog/salesforce-llm-crm-automation" onClick={handleNavItemClick}>Salesforce LLM</NavLink></li>
             
               </ul>
             </li>
@@ -514,7 +522,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active-link" : ""}`
+                  `nav-link ${isActive ? "active-link joinBtn" : ""}`
                 }
                 href="https://www.linkedin.com/company/saas-ai-labs/jobs/"
                 target="_blank"

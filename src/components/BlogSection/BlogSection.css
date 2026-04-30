@@ -17,6 +17,8 @@
     width: fit-content;
     margin-top: 1rem;
     font-weight:500;
+    display: flex;
+    justify-content: center;
 }
 
 .blogContentSection h5{

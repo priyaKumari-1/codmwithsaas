@@ -9,6 +9,10 @@ import blog6 from '../../../assets/imgs/blogImgs/SalesforceRevenueCloud.png';
 import blog7 from '../../../assets/imgs/services-details-2/AgentforceFinancialServices/AgentfinanceService.webp';
 import blog8 from '../../../assets/imgs/blogImgs/img7.png';
 import blog9 from '../../../assets/imgs/blogImgs/salesforce-field-service.webp';
+// import blog10 from '../../../assets/imgs/blogImgs/salesforceIIM.png';  
+// import blog10 from '../../../assets/imgs/blogImgs/salesforceLLM0.png'; 
+import blog10 from '../../../assets/imgs/blogImgs/salesforcellm_resized.png'; 
+
 
 import './BlogsSection.css';
 
@@ -94,6 +98,15 @@ const blogsData = [
      'Field Service Automation streamlines scheduling, dispatching, and field operations with real-time updates, helping businesses improve productivity and deliver better customer experiences.',
    link: '/blog/field-service-automation',
  },
+ {
+  id: 10,
+  image: blog10,
+  tag: 'Salesforce AI',
+  title: 'Salesforce LLM: Transforming CRM with AI-Powered Intelligence',
+  description:
+    'Salesforce LLM integrates AI into CRM to automate tasks, generate insights, and enable smarter, personalized customer interactions across sales, service, and marketing.',
+  link: '/blog/salesforce-llm-crm-automation',
+}
 
 ];
 
@@ -126,8 +139,8 @@ function BlogsSection() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover"
-                }}
+                  objectFit: "fill"
+                }} 
               />
             </div>
 

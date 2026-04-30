@@ -62,7 +62,7 @@ export default function Testimonial() {
           return (
             <div
               key={i}
-              className={`card ${i === activeIndex ? "active" : "inactive"}`}
+              className={`card mb-5 ${i === activeIndex ? "active" : "inactive"}`}
               style={{
                 transform: `translateX(${offset * 350}px) scale(${i === activeIndex ? 1 : 0.8})`,
                 opacity: i === activeIndex ? 1 : 0.4,
@@ -70,9 +70,9 @@ export default function Testimonial() {
                 zIndex: i === activeIndex ? 2 : 0
               }}
               onClick={() => setActiveIndex(i)}
-            >
+            > 
               <div className="card-content">
-                <img src={card.img} alt={card.author} className="avatarImg" />
+                <img src={card.img} alt={card.author} className="avatarImg"/>
                 <h4 className="authorName">{card.author}</h4>
                 <div className="author">
                   <p>{card.text}</p>

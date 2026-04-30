@@ -77,6 +77,7 @@ const features = [
 
 const Hero2 = () => {
   return (
+    <>
     <div className="hero2_container container">
       <h4 className='text-center pt-lg-5 Heading3'>Industries We Serve</h4>
       <div className="row mt-5 container">
@@ -99,6 +100,7 @@ const Hero2 = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 export default Hero2;
