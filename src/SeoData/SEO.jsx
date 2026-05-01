@@ -14,6 +14,7 @@ function SEO({ title, description, url, image , keywords }) {
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image}/>
       <meta name="twitter:card" content="summary_large_image" />
+      
     </Helmet>
   );
 }

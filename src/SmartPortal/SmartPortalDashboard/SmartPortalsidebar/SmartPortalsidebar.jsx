@@ -126,9 +126,7 @@ export default function Sidebar({ active, setActive }) {
               </span>
             );
           }
-
           const isActive = active === item.name;
-
           return (
             <div
               key={item.name}

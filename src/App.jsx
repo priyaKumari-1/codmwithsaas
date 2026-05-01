@@ -219,7 +219,7 @@ function App() {
             </Routes>
           </ReactChangeLoader>
         </div>
-        <Footer />
+        <Footer/>
         <PoliciesBar/>
         <Cookies/>
       </Router>

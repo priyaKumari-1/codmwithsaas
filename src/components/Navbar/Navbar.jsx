@@ -1,73 +1,219 @@
-
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { CiDark, CiLight } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { FaReact } from "react-icons/fa";
-import logo from "../../assets/imgs/template/image17.png";
-import "./Navbar.css";
-import flag1 from '../../assets/imgs/contact-4/Flag of UK.png';
-import flag2 from '../../assets/imgs/contact-4/Flag_of_India.png';
-import flag3 from '../../assets/imgs/contact-4/Flag_of_the_United_States.png';
 
-// for logo conditional 
-import brand from '../../config/brand';
+import "./Navbar.css";
+
+import flag1 from "../../assets/imgs/contact-4/Flag of UK.png";
+import flag2 from "../../assets/imgs/contact-4/Flag_of_India.png";
+import flag3 from "../../assets/imgs/contact-4/Flag_of_the_United_States.png";
+
+import brand from "../../config/brand";
 
 function Navbar() {
-  const [isDark, setIsDark] = useState(true);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
-  // for auto close the navbar in lg screen 
-  const handleToggle = () => {
-    setIsDark(!isDark);
-    document.body.classList.toggle("dark-mode");
-  };
-
-  // Close navbar after clicking a link
   const handleNavItemClick = () => {
+    setMobileOpen(false);
     setOpenDropdown(null);
-    const navbarCollapse = document.getElementById("mainNavbar");
-    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
-      window.bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
-    }
   };
 
-  // Toggle dropdown (Service, Blog) on mobile
-  const toggleDropdown = (menu) => {
-    setOpenDropdown(openDropdown === menu ? null : menu);
+  const toggleMobileMenu = () => {
+    setMobileOpen((prev) => !prev);
+    setOpenDropdown(null);
   };
+
+  const toggleDropdown = (menu) => {
+    setOpenDropdown((prev) => (prev === menu ? null : menu));
+  };
+
+  const salesforceLinks = [
+    {
+      label: "Salesforce Education Cloud",
+      path: "/ItServices/salesforce-education-cloud",
+    },
+    {
+      label: "Salesforce Financial Services",
+      path: "/ItServices/salesforce-financial-services",
+    },
+    {
+      label: "Salesforce Health & Insurance Cloud",
+      path: "/ItServices/salesforce-health-insurance-cloud",
+    },
+    {
+      label: "Salesforce Data Cloud",
+      path: "/ItServices/salesforce-data-cloud",
+    },
+    {
+      label: "Salesforce Marketing Cloud",
+      path: "/ItServices/salesforce-marketing-cloud",
+    },
+    {
+      label: "Salesforce Sales Cloud",
+      path: "/ItServices/salesforce-sales-cloud",
+    },
+    {
+      label: "Salesforce Service Cloud",
+      path: "/ItServices/salesforce-service-cloud",
+    },
+    {
+      label: "Salesforce Energy and Utilities Cloud",
+      path: "/ItServices/salesforce-energy-utilities-cloud",
+    },
+    {
+      label: "Salesforce Manufacturing Cloud",
+      path: "/ItServices/salesforce-manufacturing-cloud",
+    },
+    {
+      label: "Salesforce Nonprofit Cloud",
+      path: "/ItServices/salesforce-nonprofit-cloud",
+    },
+  ];
+
+  const dataLinks = [
+    {
+      label: "API Integration",
+      path: "/ItServices/api-integration",
+    },
+    {
+      label: "Data Integration",
+      path: "/ItServices/data-integration",
+    },
+    {
+      label: "Data Migration",
+      path: "/ItServices/data-migration",
+    },
+  ];
+
+  const developmentLinks = [
+    {
+      label: "CRM Development",
+      path: "/ItServices/crm-development",
+    },
+    {
+      label: "Building LLM",
+      path: "/ItServices/building-llm",
+    },
+    {
+      label: ".NET Application",
+      path: "/ItServices/dotnet-application-development",
+    },
+    {
+      label: "React Application",
+      path: "/ItServices/react-application-development",
+    },
+    {
+      label: "Python Application",
+      path: "/ItServices/python-application-development",
+    },
+  ];
+
+  const supportLinks = [
+    {
+      label: "Technical Support",
+      path: "/ItServices/technical-support",
+    },
+    {
+      label: "Deployment Support",
+      path: "/ItServices/deployment-support",
+    },
+  ];
+
+  const blogLinks = [
+    {
+      label: "Integration Framework",
+      path: "/blog/integration-framework",
+    },
+    {
+      label: "Trigger Framework",
+      path: "/blog/trigger-framework",
+    },
+    {
+      label: "Pharmaceutical Dashboard",
+      path: "/blog/ai-powered-dashboard",
+    },
+    {
+      label: "Agentforce Implementation",
+      path: "/blog/salesforce-agentforce",
+    },
+    {
+      label: "Salesforce AI + Synergy",
+      path: "/blog/salesforce-einstein-ai-synergy",
+    },
+    {
+      label: "Salesforce CPQ to Revenue Cloud",
+      path: "/blog/salesforce-revenue-cloud",
+    },
+    {
+      label: "Salesforce Financial Service Cloud",
+      path: "/blog/agentforce-financial-services",
+    },
+    {
+      label: "AI Powered Salesforce Development",
+      path: "/blog/agentforce-ai",
+    },
+    {
+      label: "Field Service automation",
+      path: "/blog/field-service-automation",
+    },
+    {
+      label: "LLM in Salesforce",
+      path: "/blog/salesforce-llm-crm-automation",
+    },
+  ];
+
+  const renderDropdownLinks = (links) =>
+    links.map((item) => (
+      <Link
+        key={item.path}
+        to={item.path}
+        className="dropdown-link"
+        onClick={handleNavItemClick}
+      >
+        {item.label}
+      </Link>
+    ));
+
+  const renderMobileLinks = (links) =>
+    links.map((item) => (
+      <li key={item.path}>
+        <NavLink to={item.path} onClick={handleNavItemClick}>
+          {item.label}
+        </NavLink>
+      </li>
+    ));
 
   return (
-    <nav className="navbar navbar-expand-lg border-bottom fixed-top navbarContainer">
-      <div className="nav_container container position-relative">
+    <nav className="custom-navbar">
+      <div className="nav-container">
         {/* Brand */}
-        <Link
-          className="navbar-brand d-flex align-items-center"
-          to="/"
-          onClick={handleNavItemClick}
-        >
-          {/* <img src={logo} alt="CODM" className="me-2" /> */}
-          {/* <img src={brand.logo} alt={brand.name} className="me-2"/> */}
-          <img src={brand.logo} alt={brand.name} className={`me-2 ${brand.key}`} />
+        <Link className="nav-brand" to="/" onClick={handleNavItemClick}>
+          <img
+            src={brand.logo}
+            alt={brand.name}
+            className={`brand-logo ${brand.key}`}
+          />
         </Link>
 
+        {/* Mobile Hamburger */}
         <button
-          className="navbar-toggler position-absolute"
-          style={{ right: "2rem", top: "1.5rem" }}
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar"
-          aria-expanded="false"
+          className={`hamburger ${mobileOpen ? "active" : ""}`}
+          onClick={toggleMobileMenu}
           aria-label="Toggle navigation"
+          aria-expanded={mobileOpen}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
-        {/* Links */}
-        <div className="collapse navbar-collapse" id="mainNavbar">
-          <ul className="navbar-nav mx-auto mb-5 mb-lg-0 gap-3 gap-lg-2 align-items-center">
-            <li className="nav-item d-flex">
+        {/* Menu */}
+        <div className={`nav-menu-wrapper ${mobileOpen ? "show" : ""}`}>
+          <ul className="nav-menu">
+            {/* Home */}
+            <li className="nav-item">
               <NavLink
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
@@ -79,7 +225,8 @@ function Navbar() {
               </NavLink>
             </li>
 
-            <li className="nav-item d-flex">
+            {/* About */}
+            <li className="nav-item">
               <NavLink
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
@@ -91,404 +238,189 @@ function Navbar() {
               </NavLink>
             </li>
 
-            {/* service and blog  */}
-
-            {/* SERVICES */}
-            <li className="nav-item mega-dropdown d-lg-block serviceLi">
-              <div
-                type="button"
-                className="nav-link mobile-toggle d-flex align-items-center justify-content-between serviceDiv"
-                onClick={() => toggleDropdown("service")}
-                style={{ width: '100%', height: "84px" }}
-              >
+            {/* Services */}
+            <li className="nav-item mega-dropdown">
+              <div className="nav-dropdown-head">
                 <NavLink
                   to="/ItServices"
-                  className="text-decoration-none text-reset"
+                  className="nav-link dropdown-main-link"
                   onClick={handleNavItemClick}
                 >
                   Services
                 </NavLink>
-                <MdKeyboardArrowDown style={{marginTop:".3rem"}} className={`ms-4 m-lg-0 ${openDropdown === "service" ? "rotate" : ""}`} />
-              </div> 
 
-              <div
-                className={`dropdown-menu mega-menu dropdown-menu-service ${openDropdown === "service" ? "" : ""
-                  }`}
-              >
-                <div className="row ps-5 p-md-0">
-                  {/* Column 1 */}
-                  <div className="col-md-6 servicesCrm">
-                    <h6 className="text-uppercase fw-bold mb-3 text-center">
-                      Salesforce CRM
-                    </h6>
+                <button
+                  type="button"
+                  className="dropdown-arrow-btn"
+                  onClick={() => toggleDropdown("service")}
+                  aria-label="Toggle services dropdown"
+                >
+                  <MdKeyboardArrowDown
+                    className={openDropdown === "service" ? "rotate" : ""}
+                  />
+                </button>
+              </div>
 
-                    <div className="d-flex gap-4">
-                      <div>
-                        <Link
-                          to="/ItServices/salesforce-education-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Education Cloud
-                        </Link>
+              {/* Desktop Services Mega Menu */}
+              <div className="mega-menu services-menu">
+                <div className="mega-grid">
+                  <div className="mega-column salesforce-column">
+                    <h6>Salesforce CRM</h6>
 
-                        <Link
-                          to="/ItServices/salesforce-financial-services"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Financial Services
-                        </Link>
-
-                        <Link
-                          to="/ItServices/salesforce-health-insurance-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Health & Insurance Clode
-                        </Link>
-
-                        <Link
-                          to="/ItServices/salesforce-data-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Data Cloud
-                        </Link>
-                        <Link
-                          to="/ItServices/salesforce-marketing-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Marketing Cloud
-                        </Link>
-                      </div>
-                      <div>
-
-                        <Link
-                          to="/ItServices/salesforce-sales-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Sales Cloud
-                        </Link>
-
-                        <Link
-                          to="/ItServices/salesforce-service-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Service Cloud
-                        </Link>
-
-                        <Link
-                          to="/ItServices/salesforce-energy-utilities-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Energy and Utilities Cloud
-                        </Link>
-
-                        <Link
-                          to="/ItServices/salesforce-manufacturing-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Manufacturing Cloud
-                        </Link>
-
-                        <Link
-                          to="/ItServices/salesforce-nonprofit-cloud"
-                          className="dropdown-item"
-                          onClick={handleNavItemClick}
-                        >
-                          Salesforce Nonprofit Cloud
-                        </Link>
-
-                      </div>
+                    <div className="salesforce-grid">
+                      <div>{renderDropdownLinks(salesforceLinks.slice(0, 5))}</div>
+                      <div>{renderDropdownLinks(salesforceLinks.slice(5))}</div>
                     </div>
                   </div>
 
-                  <div className="col-md-2">
-                    <h6 className="text-uppercase fw-bold mb-3">Data</h6>
-                    <Link
-                      to="/ItServices/api-integration"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      API Integration
-                    </Link>
-                    <Link
-                      to="/ItServices/data-integration"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Data Integration
-                    </Link>
-                    <Link
-                      to="/ItServices/data-migration"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Data Migration
-                    </Link>
+                  <div className="mega-column">
+                    <h6>Data</h6>
+                    {renderDropdownLinks(dataLinks)}
                   </div>
 
-                  <div className="col-md-2">
-                    <h6 className="text-uppercase fw-bold mb-3">Development</h6>
-                    <Link
-                      to="/ItServices/crm-development"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      CRM Development
-                    </Link>
-                    <Link
-                      to="/ItServices/building-llm"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Building LLM
-                    </Link>
-                    <Link
-                      to="/ItServices/dotnet-application-development"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      .NET Application
-                    </Link>
-                    <Link
-                      to="/ItServices/react-application-development"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      React Application
-                    </Link>
-                    <Link
-                      to="/ItServices/python-application-development"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Python Application
-                    </Link>
+                  <div className="mega-column">
+                    <h6>Development</h6>
+                    {renderDropdownLinks(developmentLinks)}
                   </div>
 
-                  <div className="col-md-2">
-                    <h6 className="text-uppercase fw-bold mb-3">Support</h6>
-                    <Link
-                      to="/ItServices/technical-support"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Technical Support
-                    </Link>
-                    <Link
-                      to="/ItServices/deployment-support"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Deployment Support
-                    </Link>
+                  <div className="mega-column">
+                    <h6>Support</h6>
+                    {renderDropdownLinks(supportLinks)}
                   </div>
                 </div>
               </div>
 
-              {/* phone  */}
+              {/* Mobile Services Accordion */}
               <ul
-                className={`mobile-accordion d-lg-none ${openDropdown === "service" ? "open" : ""
-                  }`}
+                className={`mobile-accordion ${
+                  openDropdown === "service" ? "open" : ""
+                }`}
               >
-                {/* Salesforce CRM */}
                 <li className="accordion-title">Salesforce CRM</li>
-                <li><NavLink to="/ItServices/salesforce-education-cloud" onClick={handleNavItemClick}>Salesforce Education Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-financial-services" onClick={handleNavItemClick}>Salesforce Financial Services</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-health&insurance-cloud" onClick={handleNavItemClick}>Salesforce Health & Insurance Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-data-cloud" onClick={handleNavItemClick}>Salesforce Data Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-marketing-cloud" onClick={handleNavItemClick}>Salesforce Marketing Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-sales-cloud" onClick={handleNavItemClick}>Salesforce Sales Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-service-cloud" onClick={handleNavItemClick}>Salesforce Service Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-energy-utilities-cloud" onClick={handleNavItemClick}>Salesforce Energy and Utilities Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-manufacturingcloud" onClick={handleNavItemClick}>Salesforce Manufacturing Cloud</NavLink></li>
-                <li><NavLink to="/ItServices/salesforce-nonprofit-cloud" onClick={handleNavItemClick}>Salesforce Nonprofit Cloud</NavLink></li>
+                {renderMobileLinks(salesforceLinks)}
 
-                {/* Data */}
-                <li className="accordion-title mt-3">Data</li>
-                <li><NavLink to="/ItServices/api-integration" onClick={handleNavItemClick}>API Integration</NavLink></li>
-                <li><NavLink to="/ItServices/data-integration" onClick={handleNavItemClick}>Data Integration</NavLink></li>
-                <li><NavLink to="/ItServices/data-migration" onClick={handleNavItemClick}>Data Migration</NavLink></li>
+                <li className="accordion-title">Data</li>
+                {renderMobileLinks(dataLinks)}
 
-                {/* Development */}
-                <li className="accordion-title mt-3">Development</li>
-                <li><NavLink to="/ItServices/crm-development" onClick={handleNavItemClick}>CRM Development</NavLink></li>
-                <li><NavLink to="/ItServices/building-llm" onClick={handleNavItemClick}>Building LLM</NavLink></li>
-                <li><NavLink to="/ItServices/dotnet-application-development" onClick={handleNavItemClick}>.NET Application</NavLink></li>
-                <li><NavLink to="/ItServices/react-application-development" onClick={handleNavItemClick}>React Application</NavLink></li>
-                <li><NavLink to="/ItServices/python-application-development" onClick={handleNavItemClick}>Python Application</NavLink></li>
+                <li className="accordion-title">Development</li>
+                {renderMobileLinks(developmentLinks)}
 
-                {/* Support */}
-                <li className="accordion-title mt-3">Support</li>
-
-                <li><NavLink to="/ItServices/technical-support" onClick={handleNavItemClick}>Technical Support</NavLink></li>
-                <li><NavLink to="/ItServices/deployment-support" onClick={handleNavItemClick}> Deployment Support</NavLink></li>
-
+                <li className="accordion-title">Support</li>
+                {renderMobileLinks(supportLinks)}
               </ul>
-
-
             </li>
 
-            {/* BLOGS */}
-            <li className="nav-item mega-dropdown1 blogsli">
-              <div
-                type="button"
-                className="nav-link mobile-toggle blogsDiv gap-1 nav-link mobile-toggle d-flex align-items-center"
-                onClick={() => toggleDropdown("blog")}
-                style={{ width: '100%', height: "84px" }}
-              >
-                <NavLink to="/blog"
-                className="text-decoration-none text-reset"
-                onClick={handleNavItemClick} 
-                  >
+            {/* Blogs */}
+            <li className="nav-item small-dropdown">
+              <div className="nav-dropdown-head">
+                <NavLink
+                  to="/blog"
+                  className="nav-link dropdown-main-link"
+                  onClick={handleNavItemClick}
+                >
                   Blogs
                 </NavLink>
-                <MdKeyboardArrowDown
-                style={{marginTop:".3rem"}}
-                  className={`ms-4 m-lg-0 ${openDropdown === "blog" ? "rotate" : ""}`}
-                />
+
+                <button
+                  type="button"
+                  className="dropdown-arrow-btn"
+                  onClick={() => toggleDropdown("blog")}
+                  aria-label="Toggle blog dropdown"
+                >
+                  <MdKeyboardArrowDown
+                    className={openDropdown === "blog" ? "rotate" : ""}
+                  />
+                </button>
               </div>
 
-              {/* for lg screen */}
-              <div
-                className={`dropdown-menu1 mega-menu1 ${openDropdown === "blog" ? "" : ""
-                  }`}
+              {/* Desktop Blog Dropdown */}
+              <div className="small-menu">
+                {renderDropdownLinks(blogLinks)}
+              </div>
+
+              {/* Mobile Blog Accordion */}
+              <ul
+                className={`mobile-accordion ${
+                  openDropdown === "blog" ? "open" : ""
+                }`}
               >
-                <div className="col-md-3">
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/integration-framework"
-                    onClick={handleNavItemClick}
-                  >
-                    Integration Framework
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/trigger-framework"
-                    onClick={handleNavItemClick}
-                  >
-                    Trigger Framework
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/ai-powered-dashboard"
-                    onClick={handleNavItemClick}
-                  >
-                    Pharmaceutical Dashboard
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/salesforce-agentforce"
-                    onClick={handleNavItemClick}
-                  >
-                    Agentforce Implementation
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/salesforce-einstein-ai-synergy"
-                    onClick={handleNavItemClick}
-                  >
-                    Salesforce AI + Synergy
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/salesforce-revenue-cloud"
-                    onClick={handleNavItemClick}
-                  >
-                    Salesforce CPQ to Revenue Cloud
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/agentforce-financial-services"
-                    onClick={handleNavItemClick}
-                  >
-                    Salesforce Financial Service Cloud
-                  </Link>
-
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/agentforce-ai"
-                    onClick={handleNavItemClick}
-                  >
-                    AI Powered Salesforce Development
-                  </Link>
-
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/field-service-automation"
-                    onClick={handleNavItemClick}
-                  >
-                    Field Service automation
-                  </Link>
-
-                  <Link
-                    className="dropdown-item"
-                    to="/blog/salesforce-llm-crm-automation"
-                    onClick={handleNavItemClick}
-                  >
-                     LLM in Salesforce
-                  </Link>
-                </div>
-              </div>
-
-              <ul className={`mobile-accordion d-lg-none ${openDropdown === "blog" ? "open" : ""}`}>
-                <li><NavLink to="/blog/integration-framework" onClick={handleNavItemClick}>Integration Framework</NavLink></li>
-                <li><NavLink to="/blog/trigger-framework" onClick={handleNavItemClick}>Trigger Framework</NavLink></li>
-                <li><NavLink to="/blog/ai-powered-dashboard" onClick={handleNavItemClick}>Pharmaceutical Dashboard</NavLink></li>
-                <li><NavLink to="/blog/salesforce-agentforce" onClick={handleNavItemClick}>Agentforce Implementation</NavLink></li>
-                <li><NavLink to="/blog/salesforce-einstein-ai-synergy" onClick={handleNavItemClick}>Salesforce AI + Synergy</NavLink></li>
-                <li><NavLink to="/blog/salesforce-revenue-cloud" onClick={handleNavItemClick}> Salesforce CPQ to Revenue Cloud</NavLink></li>
-                <li><NavLink to="/blog/agentforce-financial-services" onClick={handleNavItemClick}> Salesforce Financial Service Cloud</NavLink></li>
-                <li><NavLink to="/blog/agentforce-ai" onClick={handleNavItemClick}>AI Powered Salesforce Development</NavLink></li>
-                <li><NavLink to="/blog/field-service-automation" onClick={handleNavItemClick}>Field Service automation</NavLink></li>
-                <li><NavLink to="/blog/salesforce-llm-crm-automation" onClick={handleNavItemClick}>Salesforce LLM</NavLink></li>
-            
+                {renderMobileLinks(blogLinks)}
               </ul>
             </li>
 
-            {/* <li className="nav-item mega-dropdown1 position-relative">
-              <div className="d-flex align-items-center nav-link text-reset PartnerDiv partnerfontsize"
-                style={{ width: '100%', height: "84px" }}>
-                 Partner
-                <MdKeyboardArrowDown className="ms-1"/>
-              </div>
+            {/* Partner */}
 
-            
-              <ul className="partner-dropdown list-unstyled">
-                <li className="nav-item d-flex justify-content-center align-items-center">
-                  <NavLink
-                    className="nav-link"
-                    to="https://saasailabs.codmsoftware.co.uk/"
-                    target="_blank"
-                  >
-                    SAAS AI LABS
-                  </NavLink>
-                </li>
-              </ul>
-            </li> */}
+            {/* Partner */}
+{brand.key === "codm_Logo" ? (
+  <li className="nav-item partner-dropdown-wrapper">
+    <div className="nav-dropdown-head">
+      <span className="nav-link dropdown-main-link">Partner</span>
 
-            {brand.key === "codm_Logo" ? (
-              // CODM VERSION
-              <li className="nav-item mega-dropdown1 position-relative">
-                <div className="d-flex align-items-center nav-link text-reset PartnerDiv partnerfontsize"
-                  style={{ width: '100%', height: "84px" }}>
-                  Partner
-                  <MdKeyboardArrowDown className="ms-4 m-lg-0" />
+      <button
+        type="button"
+        className="dropdown-arrow-btn"
+        onClick={() => toggleDropdown("partner")}
+        aria-label="Toggle partner dropdown"
+      >
+        <MdKeyboardArrowDown
+          className={openDropdown === "partner" ? "rotate" : ""}
+        />
+      </button>
+    </div>
+
+    <ul
+      className={`partner-dropdown ${
+        openDropdown === "partner" ? "partner-open" : ""
+      }`}
+    >
+      <li>
+        <NavLink
+          className="dropdown-link"
+          to="https://saasailabs.codmsoftware.co.uk/"
+          target="_blank"
+          onClick={handleNavItemClick}
+        >
+          SAAS AI LABS
+        </NavLink>
+      </li>
+    </ul>
+  </li>
+) : (
+  <li className="nav-item">
+    <a
+      href="https://codmsoftware.co.uk/"
+      className="nav-link"
+      onClick={handleNavItemClick}
+    >
+      Codm software
+    </a>
+  </li>
+)}
+            {/* {
+            brand.key === "codm_Logo" ? (
+              <li className="nav-item partner-dropdown-wrapper">
+                <div
+                  className="nav-dropdown-head partner-head"
+                  onClick={() => toggleDropdown("partner")}
+                >
+                  <span className="nav-link">Partner</span>
+
+                  <MdKeyboardArrowDown
+                    className={openDropdown === "partner" ? "rotate" : ""}
+                  />
                 </div>
 
-                <ul className="partner-dropdown list-unstyled">
-                  <li className="nav-item d-flex justify-content-center align-items-center">
+                <ul
+                  className={`partner-dropdown ${
+                    openDropdown === "partner" ? "partner-open" : ""
+                  }`}
+                >
+                  <li>
                     <NavLink
-                      className="nav-link"
+                      className="dropdown-link"
                       to="https://saasailabs.codmsoftware.co.uk/"
                       target="_blank"
+                      onClick={handleNavItemClick}
                     >
                       SAAS AI LABS
                     </NavLink>
@@ -496,18 +428,19 @@ function Navbar() {
                 </ul>
               </li>
             ) : (
-              // SAASAI VERSION
-              <a
-                href="https://codmsoftware.co.uk/"
-                className="d-flex align-items-center nav-link text-reset partnerfontsize"
+              <li className="nav-item">
+                <a
+                  href="https://codmsoftware.co.uk/"
+                  className="nav-link"
+                  onClick={handleNavItemClick}
+                >
+                  Codm software
+                </a>
+              </li>
+            )} */}
 
-              >
-                Codm software
-              </a>
-            )}
-
-
-            <li className="nav-item  d-flex justify-content-center align-items-center">
+            {/* Contact */}
+            <li className="nav-item">
               <NavLink
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
@@ -519,51 +452,42 @@ function Navbar() {
               </NavLink>
             </li>
 
+            {/* Join Us */}
             <li className="nav-item">
               <a
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active-link joinBtn" : ""}`
-                }
                 href="https://www.linkedin.com/company/saas-ai-labs/jobs/"
                 target="_blank"
+                rel="noreferrer"
                 onClick={handleNavItemClick}
               >
-                <button className="p-2 rounded-3 purple-bg border-0">Join Us</button>
+                <button type="button" className="join-btn">
+                  Join Us
+                </button>
               </a>
             </li>
           </ul>
         </div>
 
-        <div className="justify-content-center align-content-center d-none d-lg-block">
-          <div className="d-flex text-center align-items-center">
-            <img
-              src={flag1}
-              alt="UK Flag"
-              style={{ width: "15px", height: "13px", marginRight: "6px", paddingTop: "0rem", }}
-            />
-            <p className="align-items-center" style={{ fontSize: ".9rem", marginBottom: "1px" }}>UK: (+44) 0121 818 6924</p>
+        {/* Contact Numbers */}
+        <div className="nav-contact">
+          <div className="contact-line">
+            <img src={flag1} alt="UK Flag" />
+            <p>UK: (+44) 0121 818 6924</p>
           </div>
 
-          <div className="d-flex align-items-center">
-            <img
-              src={flag3}
-              alt="USA Flag"
-              style={{ width: "15px", height: "13px", marginRight: "6px" }}
-            />
-            <span className="align-items-center" style={{ fontSize: ".9rem" }}>USA: (+1) 201 623 3132</span>
+          <div className="contact-line">
+            <img src={flag3} alt="USA Flag" />
+            <p>USA: (+1) 201 623 3132</p>
           </div>
 
-          <div className="d-flex align-items-center p-0">
-            <img
-              src={flag2}
-              alt="UK Flag"
-              style={{ width: "15px", height: "13px", marginRight: "6px", paddingTop: "0rem", }}
-            />
-            <p className="align-items-center" style={{ fontSize: ".9rem", marginBottom: "1px" }}>India : (+91) 9717116432</p>
+          <div className="contact-line">
+            <img src={flag2} alt="India Flag" />
+            <p>India : (+91) 9717116432</p>
           </div>
         </div>
       </div>
     </nav>
   );
 }
+
 export default Navbar;

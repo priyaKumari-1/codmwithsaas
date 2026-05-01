@@ -73,7 +73,7 @@ const BlogFormSection = ({
                 </div>
 
                 {/* Submit */}
-                <div className="col-12 hover-up d-flex justify-content-center">
+                <div className="col-12 hover-up d-flex justify-content-end">
                   <button type="submit" className="purple-bg mt-4 p-3 hover-up border-0 rounded-2">
                     Send Message
                     <svg
