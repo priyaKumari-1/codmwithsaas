@@ -80,6 +80,7 @@ const SmartPortal = () => {
   const { instance, accounts, inProgress } = useMsal();
   const activeAccount = accounts[0];
 
+
   const handleLoginRedirect = () => {
     instance
       .loginRedirect({
@@ -112,6 +113,7 @@ const SmartPortal = () => {
     <div>
      {activeAccount ? (
           <>
+          { console.log(activeAccount,"the account data")}
             {/* Welcome {activeAccount.name} ({activeAccount.username}) */}
            <SmartPortalDashboard name={activeAccount.name} username={activeAccount.username}/> 
           </>

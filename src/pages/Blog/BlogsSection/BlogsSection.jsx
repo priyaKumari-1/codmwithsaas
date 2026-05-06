@@ -12,6 +12,7 @@ import blog9 from '../../../assets/imgs/blogImgs/salesforce-field-service.webp';
 // import blog10 from '../../../assets/imgs/blogImgs/salesforceIIM.png';  
 // import blog10 from '../../../assets/imgs/blogImgs/salesforceLLM0.png'; 
 import blog10 from '../../../assets/imgs/blogImgs/salesforcellm_resized.png'; 
+import blog11 from '../../../assets/imgs/services-details-2/SSO/SSO2.png';
 
 
 import './BlogsSection.css';
@@ -106,6 +107,15 @@ const blogsData = [
   description:
     'Salesforce LLM integrates AI into CRM to automate tasks, generate insights, and enable smarter, personalized customer interactions across sales, service, and marketing.',
   link: '/blog/salesforce-llm-crm-automation',
+},
+{
+  id: 11,
+  image: blog11,
+  tag: 'SSO Authentication',
+  title: 'SSO Authentication in Salesforce: Secure and Seamless User Access',
+  description:
+    'Explore how SSO authentication works. Learn how to implement secure, seamless login experiences in React applications with enterprise-grade identity management.',
+  link: '/blog/salesforce-sso-authentication',
 }
 
 ];

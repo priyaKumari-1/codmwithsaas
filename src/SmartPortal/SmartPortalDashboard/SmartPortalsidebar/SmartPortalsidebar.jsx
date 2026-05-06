@@ -62,10 +62,11 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./SmartPortalsidebar.css";
 import DashboardInfo from "../DashboardInfo/DashboardInfo";
+import Attendence from '../AttendenceLog/Attendence';
 
 // All Components
 export const Dashboard = () => <div><DashboardInfo/></div>;
-export const AttendenceLog = () => <div>Attendence Log Component</div>;
+export const AttendenceLog = () => <div><Attendence/> </div>;
 export const Profile = () => <div>My Profile Component</div>;
 export const Org = () => <div>Org Directory Component</div>;
 export const Leave = () => <div>Leave Management Component</div>;

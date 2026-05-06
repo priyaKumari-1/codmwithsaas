@@ -58,6 +58,7 @@ import FslAutomation from './BlogsComponents/FslAutomation/FslAutomation';
 // for auth in smartPortal
 import SmartPortal from './SmartPortal/SmartPortal';
 import SalesforceIIM from './BlogsComponents/SalesforceIIM/SalesforceIIM';
+import SSO from './BlogsComponents/SSO/SSO.JSX';
 
 function App() { 
   
@@ -124,7 +125,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
-              <Route path='/MyKoda' element={<SmartPortal/>}/>
+              {/* <Route path='/MyKoda' element={<SmartPortal/>}/> */}
 
               {/* service routes */}
               <Route path="/ItServices" element={<Service />} />
@@ -209,7 +210,8 @@ function App() {
               <Route path="/blog/agentforce-financial-services" element={<AgentforceFinancialServices />} />
               <Route path="/blog/agentforce-ai" element={<AgentforceAI/>} />
               <Route path="/blog/field-service-automation" element={<FslAutomation/>} /> 
-              <Route path="/blog/salesforce-llm-crm-automation" element={<SalesforceIIM/>} />              
+              <Route path="/blog/salesforce-llm-crm-automation" element={<SalesforceIIM/>} />      
+              <Route path="/blog/salesforce-sso-authentication" element={<SSO/>}/>        
               
               
               {/* </Route> */}

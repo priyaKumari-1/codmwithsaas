@@ -82,3 +82,7 @@ font-weight: 600;
  font-size: 40px;
  text-transform: unset;
 } 
+
+code{
+  color: blue;
+}

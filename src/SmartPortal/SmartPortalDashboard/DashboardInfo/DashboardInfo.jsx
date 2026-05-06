@@ -1,18 +1,9 @@
 import React from "react";
+import { useEffect , useState } from "react";
 import "./DashboardInfo.css";
 import { FaUser, FaCalendarAlt, FaMoneyBillWave, FaUserTie, FaBuilding, FaClipboardList } from "react-icons/fa";
 import {
-  PieChart,
-  Pie,
-  Cell,
-  Tooltip,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Legend,
-  ResponsiveContainer
+  PieChart,Pie,Cell,Tooltip,BarChart,Bar,XAxis,YAxis,CartesianGrid,Legend,ResponsiveContainer
 } from "recharts";
 
 const data = [
@@ -72,6 +63,28 @@ const attendanceData = [
 
 
 export default function DashboardInfo() {
+
+  const [time, setTime] = useState(new Date());
+  const [checkInTime, setCheckInTime] = useState(null);
+  const [checkOutTime, setCheckOutTime] = useState(null);
+
+  // Live clock
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleCheckIn = () => {
+    setCheckInTime(new Date());
+    setCheckOutTime(null);
+  };
+
+  const handleCheckOut = () => {
+    setCheckOutTime(new Date());
+  };
   return (
     <div className="smartPortal-home"> 
      <div>
@@ -83,10 +96,31 @@ export default function DashboardInfo() {
           <p>Here's what's happening in your organization today</p>
         </div>
 
-        <div className="smartPortal-status">
+        {/* <div className="smartPortal-status">
           <span>Today's Status</span>
-          <button>Working from Home</button>
-        </div>
+          <button>In</button>
+        </div> */}
+
+        <div className="smartPortal-status">
+      {/* <span>Today's Status</span> */}
+
+
+      {/* <div className="clock">
+        {time.toLocaleTimeString()}
+      </div> */}
+
+      {/* Buttons */}
+      <div className="actions">
+        <button onClick={handleCheckIn}>In</button>
+        <button onClick={handleCheckOut}>Out</button> 
+      </div>
+
+      {/* Display Times */}
+      <div className="times">
+        <p>Check-In: {checkInTime ? checkInTime.toLocaleTimeString() : "--:--"} {"   "} Check-Out: {checkOutTime ? checkOutTime.toLocaleTimeString() : "--:--"} </p>
+     
+      </div>
+    </div>
       </div>
 
       {/* Info Cards */}
@@ -171,7 +205,90 @@ export default function DashboardInfo() {
         </div>
       </div>
 
+      {/*  */}
+    
+       
     </div>
+
+    {/* <div className="smartPortal-bottom"> */}
+
+  {/* Leave Balance Summary */}
+  {/* <div className="smartPortal-summary-card">
+    <h4>Leave Balance Summary</h4>
+
+    <div className="leave-item">
+      <div className="leave-label">
+        <span>Annual Leave</span>
+        <span>8/20 used</span>
+      </div>
+      <div className="progress purple">
+        <div style={{ width: "40%" }}></div>
+      </div>
     </div>
+
+    <div className="leave-item">
+      <div className="leave-label">
+        <span>Sick Leave</span>
+        <span>3/12 used</span>
+      </div>
+      <div className="progress orange">
+        <div style={{ width: "25%" }}></div>
+      </div>
+    </div>
+
+    <div className="leave-item">
+      <div className="leave-label">
+        <span>Casual Leave</span>
+        <span>6/10 used</span>
+      </div>
+      <div className="progress teal">
+        <div style={{ width: "60%" }}></div>
+      </div>
+    </div>
+
+    <div className="leave-item">
+      <div className="leave-label">
+        <span>Unpaid Leave</span>
+        <span>1/5 used</span>
+      </div>
+      <div className="progress red">
+        <div style={{ width: "20%" }}></div>
+      </div>
+    </div>
+  </div> */}
+
+  {/* Timesheet Status */}
+  <div className="smartPortal-summary-card">
+    <h4>Timesheet Status</h4>
+
+    <div className="timesheet-item">
+      <div>
+        <p>Mar 3 - Mar 7</p>
+        <span>40.00 hrs logged</span>
+      </div>
+      <button className="status approved">Approved</button>
+    </div>
+
+    <div className="timesheet-item">
+      <div>
+        <p>Mar 10 - Mar 14</p>
+        <span>38.50 hrs logged</span>
+      </div>
+      <button className="status pending">Pending</button>
+    </div>
+
+    <div className="timesheet-item">
+      <div> 
+        <p>Mar 17 - Mar 21</p>
+        <span>-- hrs logged</span>
+      </div>
+      <button className="status notsubmitted">Not Submitted</button>
+    </div>
+
+    <button className="submit-btn">Submit Timesheet</button>
+  </div>
+
+</div>
+    // </div>
   );
 }

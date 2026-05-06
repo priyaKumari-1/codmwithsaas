@@ -161,6 +161,10 @@ function Navbar() {
       label: "LLM in Salesforce",
       path: "/blog/salesforce-llm-crm-automation",
     },
+    {
+      label: "Authentication using SSO",
+      path: "/blog/salesforce-sso-authentication",
+    },
   ];
 
   const renderDropdownLinks = (links) =>
@@ -229,7 +233,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active-link" : ""}`
+                  `nav-link px-sm-2 ${isActive ? "active-link" : ""}`
                 }
                 to="/about"
                 onClick={handleNavItemClick}

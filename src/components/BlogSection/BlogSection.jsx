@@ -10,6 +10,7 @@ import blog7 from '../../assets/imgs/services-details-2/AgentforceFinancialServi
 import blog8 from '../../assets/imgs/blogImgs/img7.png';
 import blog9 from '../../assets/imgs/blogImgs/salesforce-field-service.webp';
 import blog10 from '../../assets/imgs/blogImgs/salesforcellm_resized.png';
+import blog11 from '../../assets/imgs/services-details-2/SSO/SSO2.png';
 import DotBtn from "../../utils/Dotbtn/Dotbtn";
 import { Link } from "react-router-dom";
 import "./BlogSection.css";
@@ -106,6 +107,15 @@ const blogData = [
     description:
       'Salesforce LLM integrates AI into CRM to automate tasks, generate insights, and enable smarter, personalized customer interactions across sales, service, and marketing.',
     link: '/blog/salesforce-llm-crm-automation',
+  },
+  {
+    id: 11,
+    image: blog11,
+    tag: 'SSO Authentication',
+    title: 'SSO Authentication in Salesforce: Secure and Seamless User Access',
+    description:
+      'Explore how SSO authentication works. Learn how to implement secure, seamless login experiences in React applications with enterprise-grade identity management.',
+    link: '/blog/salesforce-sso-authentication',
   }
 
 ];
@@ -183,9 +193,11 @@ function BlogSection() {
                   {/* <p className="blagCards_btn tag-spacing text-linear-2 text-uppercase mt-3">
                     {item.tag}
                   </p> */}
+                 
                   <div className="pt-4 d-sm-block d-flex justify-content-center align-items-center">
-                  <DotBtn>{item.tag}</DotBtn>
+                  <DotBtn text={item.tag}></DotBtn>
                   </div>
+
                   <div className="blogContentSection m-2">
                     <h5 className="my-3">{item.title}</h5>
                     <p className="pb-5 mb-5">{item.description}</p>
